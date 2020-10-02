@@ -7,6 +7,12 @@ $username = $_SERVER['DB_USERNAME'];
 $password = $_SERVER['DB_PASSWORD'];
 $dbname = $_SERVER['DB_DATABASE'];
 
+try {
+    require('db-config.php');
+} catch ( Exception $ex){
+    return true;
+}
+
 $link = mysqli_connect($host,$username,$password,$dbname);
 
 // 接続状況をチェックします
