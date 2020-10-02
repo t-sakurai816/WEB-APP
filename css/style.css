@@ -1,0 +1,18 @@
+.container{
+  font-family: arial, sans-serif;
+  margin-top: 3%;/*上ちょっとあける*/
+}
+
+h1{
+  text-align: center;/*中央寄せ*/
+}
+
+.github_logo{
+  display:inline-block;
+  text-align:center; 
+}
+
+img{
+  -webkit-appearance: none;
+  margin: 40px !important;
+}
