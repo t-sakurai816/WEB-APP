@@ -1,17 +1,42 @@
-<?php
+<!DOCTYPE html>
+<html lang="ja">
 
-// DB情報をElasticBeanstalkの環境変数から読み取る
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEBアプリケーション構築実験</title>
 
-$host = $_SERVER['DB_HOST'];
-$username = $_SERVER['DB_USERNAME'];
-$password = $_SERVER['DB_PASSWORD'];
-$dbname = $_SERVER['DB_DATABASE'];
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 
-$link = mysqli_connect($host,$username,$password,$dbname);
+<body>
+  <div class="container">
+    <div class="col-sm-12">
+      <h1>Welcome to Sakurai's App!!</h1>
+      <!--RDS接続チェック-->
+      <p>DB connection check : <?php include('./rds-check-connect.php');?></p>
 
-// 接続状況をチェックします
-if (mysqli_connect_errno()) {
-    die("データベースに接続できません:" . mysqli_connect_error() . "\n");
-} else {
-    echo "データベースの接続に成功しました。\n";
-}
+      <div>
+        <h2>Other Pages</h2>
+        <li><a href="./info.php">PHP info</a></li>
+        <li><a href="./sample.php">CIT Pic (lesson1)</a></li>
+      </div>
+
+    </div>
+    <div class="col text-center">
+      <!-- GitHubアイコン -->
+      <div class="github_logo">
+        <a href="https://github.com/t-sakurai816/WEB-APP" target="blank"><img alt="github-logo"
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" height="40px">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
