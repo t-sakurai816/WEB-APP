@@ -19,6 +19,8 @@
       <h1>Welcome to Sakurai's App!!</h1>
       <!--RDS接続チェック-->
       <p>DB connection check : <?php include('./rds-check-connect.php');?></p>
+      訪問者のIPアドレス表示
+      <p>Your IP Address : <?php echo $_SERVER["REMOTE_ADDR"];?></p>
 
       <div>
         <h2>Other Pages</h2>
