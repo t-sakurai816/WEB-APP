@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>位置情報を表示</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/position.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- JavaScript -->
+  <script src="./js/getPosition.js"></script>
+  <!--位置情報を取得-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="col sm-12">
+      <h1>位置情報を取得</h1>
+      <div class="col text-center">
+        <button type="button" class="btn btn-primary" onclick="getPosition();">位置情報を取得</button>
+      </div>
+      <div class="position">
+        <div>緯度 : <span id="now_latitude"><!--緯度を表示--></span></div>
+        <div>経度 : <span id="now_longitude"><!--経度を表示--></span></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
