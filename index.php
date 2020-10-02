@@ -7,7 +7,7 @@ $username = $_SERVER['DB_USERNAME'];
 $password = $_SERVER['DB_PASSWORD'];
 $dbname = $_SERVER['DB_DATABASE'];
 
-$link = mysqli_connect($host,$username,$passwordd,$dbname);
+$link = mysqli_connect($host,$username,$password,$dbname);
 
 // 接続状況をチェックします
 if (mysqli_connect_errno()) {
