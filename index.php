@@ -22,7 +22,7 @@
 
       <div>
         <h2>Other Pages</h2>
-        <li><a href="./info.php">PHP info</a></li>
+
         <li><a href="./sample.php">CIT Pic (lesson1)</a></li>
       </div>
 
