@@ -11,9 +11,9 @@ $link = mysqli_connect($host,$username,$password,$dbname);
 
 // 接続状況をチェックします
 if (mysqli_connect_errno()) {
-    die("データベースに接続できません:" . mysqli_connect_error() . "\n");
+    die("Connection failed : " . mysqli_connect_error() . "\n");
 } else {
-    echo "データベースの接続に成功しました。\n";
+    echo "Connection Success!!\n";
 }
 
 ?>
