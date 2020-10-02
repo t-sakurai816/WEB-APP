@@ -13,7 +13,7 @@ $link = mysqli_connect($host,$username,$password,$dbname);
 if (mysqli_connect_errno()) {
     die("Connection failed : " . mysqli_connect_error() . "\n");
 } else {
-    echo "Connection Success!!\n";
+    echo "<FONT COLOR=\"RED\"> Connection Success!!</FONT>\n";
 }
 
 ?>
