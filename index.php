@@ -21,7 +21,7 @@
       <!--RDS接続チェック-->
       <p>DB connection check : <?php include('php/rds-check-connect.php');?></p>
       <!-- 訪問者のIPアドレス表示 -->
-      <p>Your IP Address : <?php echo $_SERVER["HTTP_X_FORWARDED_FOR"];?></p>
+      <p>Your IP Address : <?php echo $_SERVER["HTTP_X_FORWARDED_FOR"][0];?></p>
 
       <div>
         <h2>Other Pages</h2>
