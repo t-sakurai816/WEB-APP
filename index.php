@@ -28,7 +28,7 @@
         <li><a href="./position.html">Get Position</a></li>
         <li><a href="./sample.php">CIT Pic (lesson1)</a></li>
         <li><a href="./top.php">top.php (lesson2)</li>
-        <li><a href="./sample.php">result.php (lesson2)</li>
+        <li><a href="./result.php">result.php (lesson2)</li>
       </div>
 
     </div>
