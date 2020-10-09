@@ -19,7 +19,7 @@
     <div class="col-sm-12">
       <h1>Welcome to Sakurai's App!!</h1>
       <!--RDS接続チェック-->
-      <p>DB connection check : <?php include('./rds-check-connect.php');?></p>
+      <p>DB connection check : <?php include('php/rds-check-connect.php');?></p>
       <!-- 訪問者のIPアドレス表示 -->
       <p>Your IP Address : <?php echo $_SERVER["HTTP_X_FORWARDED_FOR"];?></p>
 
