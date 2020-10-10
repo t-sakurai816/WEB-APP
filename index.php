@@ -26,9 +26,10 @@
       <div>
         <h2>Other Pages</h2>
         <li><a href="./html/position.html">Get Position</a></li>
+        <hr class="cp_hr02" /><!--破線-->
         <li><a href="./php/sample.php">CIT Pic (lesson1)</a></li>
-        <li><a href="./php/top.php">top.php (lesson2)</li>
-        <li><a href="./php/result.php">result.php (lesson2)</li>
+        <li><a href="./php/top.php">top.php (lesson2)</a></li>
+        <li><a href="./php/result.php">result.php (lesson2)</a></li>
       </div>
 
     </div>

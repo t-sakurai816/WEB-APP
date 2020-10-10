@@ -8,6 +8,12 @@ h1{
   padding-bottom: 3%;
 }
 
+.cp_hr02 {
+	border-width: 1px 0 0 0;
+	border-style: dashed;
+	border-color: #BBBBBB;
+}
+
 .github_logo{
   display:inline-block;
   text-align:center; 
