@@ -7,9 +7,15 @@
 <?php
 //数字0, 1, 2を文字列グー，チョキ，パーに変換するための関数
 function hyouji($arg){
-  if       ($arg == 0) { $str = "グー";
-  } elseif ($arg == 1) { $str = "チョキ";
-  } else {               $str = "パー";
+  if ($arg == 0) {
+    $str = "グー";
+    echo $str;
+  } elseif ($arg == 1) {
+    $str = "チョキ";
+    echo $str;
+  } else {
+    $str = "パー";
+    echo $str;
   }
 }
 
@@ -31,26 +37,35 @@ if ($user == $com){
        $result = "コンピュータの勝ち";
        $lose++;
 }
+
+// ユーザーの手を表示
 echo "ユーザは <font color=red>";
-echo hyouji($user);
+hyouji($user);
+
+// コンピュータの手を表示
 echo "</font> で，コンピュータは <font color=red>";
-echo hyouji($com);
+hyouji($com);
+
 echo "</font><BR>";
+
+// 結果を表示
 echo "したがって，$result";
 echo "<BR><BR>結果，<font color=red>".$win."</font>勝 <font color=red>"; 
 echo $lose."</font>敗 <font color=red>".$aiko."</font>分け";
 ?>
+
 <form action="top.php" method="POST">
-<input type="submit" value="もう一度やる？">
-<input type="hidden" value=<?php echo $win; ?>  name="win">
-<input type="hidden" value=<?php echo $lose; ?> name="lose">
-<input type="hidden" value=<?php echo $aiko; ?> name="aiko">
+  <input type="submit" value="もう一度やる？">
+  <input type="hidden" value=<?php echo $win; ?>  name="win">
+  <input type="hidden" value=<?php echo $lose; ?> name="lose">
+  <input type="hidden" value=<?php echo $aiko; ?> name="aiko">
 </form>
-<from action="top.php" method="GET">
-<input type="submit" value="はじめから？">
-<input type="hidden" value=0 name="win">
-<input type="hidden" value=0 name="lose">
-<input type="hidden" value=0 name="aiko">
+
+<form action="top.php" method="GET">
+  <input type="submit" value="はじめから？">
+  <input type="hidden" value=0 name="win">
+  <input type="hidden" value=0 name="lose">
+  <input type="hidden" value=0 name="aiko">
 </form>
 </body>
 </html>
