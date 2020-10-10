@@ -54,7 +54,7 @@ echo "<BR><BR>結果，<font color=red>".$win."</font>勝 <font color=red>";
 echo $lose."</font>敗 <font color=red>".$aiko."</font>分け";
 ?>
 
-<form action="top.php" method="POST">
+<form action="top.php" method="GET">
   <input type="submit" value="もう一度やる？">
   <input type="hidden" value=<?php echo $win; ?>  name="win">
   <input type="hidden" value=<?php echo $lose; ?> name="lose">
