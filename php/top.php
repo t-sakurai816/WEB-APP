@@ -28,9 +28,9 @@
          <input type="radio" name="janken" value="1">チョキ <!--ラジオボタン-->
          <input type="radio" name="janken" value="2">パー <!--ラジオボタン-->
 
-         <input  type="hidden" name="win" value=<?php echo $win; ?>>
-         <input  type="hidden" name="aiko" value=<?php echo $aiko; ?>>
-         <input  type="hidden" name="lose" value=<?php echo $lose; ?>>
+         <input  type="hidden" name="win" value=<?php $win; ?>>
+         <input  type="hidden" name="aiko" value=<?php $aiko; ?>>
+         <input  type="hidden" name="lose" value=<?php $lose; ?>>
          <input type="submit" value="ぽん"> <!--送信-->
 
 
