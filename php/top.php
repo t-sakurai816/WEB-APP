@@ -22,13 +22,16 @@ if(isset($_GET["aiko"])){  //あいこだった回数
    }
 ?>
 
-<form action="result.php" method="post">
-じゃんけん　<input type="radio" name="janken" value="0">グー
-<input type="radio" name="janken" value="1">チョキ
-<input type="radio" name="janken" value="2">パー
-<input type="submit" value="ぽん">
-<input type="hidden" value=<?php echo $win; ?>  name="win">
-<input type="hidden" value=<?php echo $aik0; ?> name="aiko">
+<form action="result.php" method="get">
+じゃんけん 
+   <input type="radio" name="janken" value="0">グー <!--ラジオボタン-->
+   <input type="radio" name="janken" value="1">チョキ <!--ラジオボタン-->
+   <input type="radio" name="janken" value="2">パー <!--ラジオボタン-->
+   <input type="submit" value="ぽん"> <!--送信-->
+
+   <input  value=<?php echo $win; ?>  name="win">
+   <input  value=<?php echo $aik0; ?> name="aiko">
+   <input  value=<?php echo $lose; ?>  name="lose">
 </form>
 </body>
 </html>
