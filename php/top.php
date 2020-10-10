@@ -27,11 +27,13 @@
          <input type="radio" name="janken" value="0">グー <!--ラジオボタン-->
          <input type="radio" name="janken" value="1">チョキ <!--ラジオボタン-->
          <input type="radio" name="janken" value="2">パー <!--ラジオボタン-->
-         <input type="submit" value="ぽん"> <!--送信-->
 
          <input  type="hidden" value=<?php echo $win; ?>  name="win">
          <input  type="hidden" value=<?php echo $aiko; ?> name="aiko">
          <input  type="hidden" value=<?php echo $lose; ?>  name="lose">
+         <input type="submit" value="ぽん"> <!--送信-->
+
+
       </form>
    </body>
 </html>
