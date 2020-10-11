@@ -25,8 +25,8 @@
       <form action="result.php" method="get">
       じゃんけん 
          <input type="radio" name="janken" value="0" required>グー <!--ラジオボタン-->
-         <input type="radio" name="janken" value="1">チョキ <!--ラジオボタン-->
-         <input type="radio" name="janken" value="2">パー <!--ラジオボタン-->
+         <input type="radio" name="janken" value="1" required>チョキ <!--ラジオボタン-->
+         <input type="radio" name="janken" value="2" required>パー <!--ラジオボタン-->
 
          <input  type="hidden" name="win" value=<?php echo $win; ?>>
          <input  type="hidden" name="aiko" value=<?php echo $aiko; ?>>
