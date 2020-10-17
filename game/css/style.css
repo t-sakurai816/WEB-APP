@@ -22,13 +22,13 @@
 }
 
 .bg-red{
-  background-color: red;
+  background-color: #dc3545;/*bootstrapのボタン色に合わせる*/
   color: white;
   text-align: center;
 }
 
 .bg-black{
-  background-color: black;
+  background-color: #343a40;/*bootstrapのボタン色に合わせる*/
   color: white;
   text-align: center;
 }
