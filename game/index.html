@@ -14,90 +14,160 @@
 
 <body>
   <div class="container">
-    <div class="col-md-12">
-      <h1>ルーレットゲーム</h1>
-      <div class="row">
-        <div class="col-sm-3 col-xs-3" id="money">
-          <!--現在のmoneyを表示-->
-          money
-        </div>
-        <div class="col-sm-9 col-xs-9" id="form">
-          <!--formを表示-->
-          hoge
-          <div class="form-group">
+    <h1>ルーレットゲーム</h1>
+    <div class="row">
+      <div class="col-sm-3 col-xs-3" id="money">
+        <!--現在のmoneyを表示-->
+        money
+      </div>
+      <div class="col-sm-9 col-xs-9" id="form">
+        <!--formを表示-->
+        hoge
+        <div class="form-group">
 
 
-            <form action="">
-              <div class="row">
-                <!--横並び-->
-                <div class="col-sm-4 col-xs-4">
-                  left
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">赤</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">黒</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">偶数</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">奇数</label>
-                  </div>
+          <form action="">
+            <div class="row">
+              <!--横並び-->
+              <div class="col-sm-4 col-xs-4">
+                left
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">赤</label>
                 </div>
-                <div class="col-sm-4 col-xs-4">
-                  center
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">1</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">2</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">3</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">4</label>
-                  </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">黒</label>
                 </div>
-                <div class="col-sm-4 col-xs-4">
-                  right
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">5</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">6</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">7</label>
-                  </div>
-                  <div class="chekbox-inline">
-                    <input type="checkbox" name="" id="">
-                    <label for="">8</label>
-                  </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">偶数</label>
+                </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">奇数</label>
                 </div>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-sm-12" id="table">
-          <!--表を表示-->
-          表
+              <div class="col-sm-4 col-xs-4">
+                center
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">1</label>
+                </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">2</label>
+                </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">3</label>
+                </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">4</label>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                right
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">5</label>
+                </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">6</label>
+                </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">7</label>
+                </div>
+                <div class="chekbox-inline">
+                  <input type="checkbox" name="" id="">
+                  <label for="">8</label>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+      <div class="col-sm-12" id="table">
+        <!--表を表示-->
+        表
+        <div class="table-responsive">
+          <!--tableをレスポンシブに-->
+          <table class="table table-bordered">
+            <!--網目にする-->
+            <thead>
+              <tr>
+                <th></th>
+                <th colspan="4" class="align-middle">1st 12</th>
+                <th colspan="4" class="align-middle">2st 12</th>
+                <th colspan="4" class="align-middle">3st 12</th>
+              </tr>
+            </thead>
+            <tbody>
+              <th rowspan="4" class="align-middle">0</th>
+              <!--縦連結-->
+              <tr><!--上段-->
+                <td class="bg-red">3</td>
+                <td class="bg-black">6</td>
+                <td class="bg-red">9</td>
+                <td class="bg-red">12</td>
+                <td class="bg-black">15</td>
+                <td class="bg-red">18</td>
+                <td class="bg-red">21</td>
+                <td class="bg-black">24</td>
+                <td class="bg-red">27</td>
+                <td class="bg-red">30</td>
+                <td class="bg-black">33</td>
+                <td class="bg-red">36</td>
+              </tr>
+              <tr><!--中段-->
+                <td class="bg-black">2</td>
+                <td class="bg-red">5</td>
+                <td class="bg-black">8</td>
+                <td class="bg-black">11</td>
+                <td class="bg-red">14</td>
+                <td class="bg-black">17</td>
+                <td class="bg-black">20</td>
+                <td class="bg-red">23</td>
+                <td class="bg-black">26</td>
+                <td class="bg-black">29</td>
+                <td class="bg-red">32</td>
+                <td class="bg-black">35</td>
+              </tr>
+              <tr><!--下段-->
+                <td class="bg-red">1</td>
+                <td class="bg-black">4</td>
+                <td class="bg-red">7</td>
+                <td class="bg-black">10</td>
+                <td class="bg-black">13</td>
+                <td class="bg-red">16</td>
+                <td class="bg-red">19</td>
+                <td class="bg-black">22</td>
+                <td class="bg-red">25</td>
+                <td class="bg-black">28</td>
+                <td class="bg-black">31</td>
+                <td class="bg-red">34</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th></th>
+                <th colspan="2" class="align-middle">1 - 18</th>
+                <th colspan="2" class="align-middle">Even</th>
+                <th colspan="2" class="bg-red"></th>
+                <th colspan="2" class="bg-black"></th>
+                <th colspan="2" class="align-middle">Odd</th>
+                <th colspan="2" class="align-middle">19 - 36</th>
+              </tr>
+            </thead>
 
+          </table>
+        </div>
+      </div>
     </div>
+
   </div>
 </body>
 

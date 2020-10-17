@@ -12,5 +12,23 @@
 }
 
 #table{
-  background-color: yellow;
+  background-color: green;
+}
+
+
+.align-middle{/*縦連結*/
+  text-align: center;
+  color: white;
+}
+
+.bg-red{
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.bg-black{
+  background-color: black;
+  color: white;
+  text-align: center;
 }
