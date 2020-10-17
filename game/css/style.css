@@ -1,0 +1,16 @@
+.container{
+  background-color: aqua;
+  margin-top: 3px;/*ちょっと下に下げる*/
+}
+
+#money{
+  background-color: red;
+}
+
+#form{
+  background-color: greenyellow;
+}
+
+#table{
+  background-color: yellow;
+}
