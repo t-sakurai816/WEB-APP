@@ -6,3 +6,9 @@ h1{
   margin-top: 3%;
   margin-bottom: 5%;
 }
+
+.cp_hr02 {/*破線*/
+	border-width: 1px 0 0 0;
+	border-style: dashed;
+	border-color: #BBBBBB;
+}
