@@ -10,6 +10,15 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -106,8 +115,9 @@
             <tbody>
               <th rowspan="4" class="align-middle">0</th>
               <!--縦連結-->
-              <tr><!--上段-->
-                <td class="bg-red"><button type="button" class="btn btn-danger btn-md p-0 w-100" data-toggle="modal" data-target="#modal1">3</button></td>
+              <tr>
+                <!--上段-->
+                <td class="bg-red">3</td>
                 <td class="bg-black">6</td>
                 <td class="bg-red">9</td>
                 <td class="bg-red">12</td>
@@ -120,8 +130,10 @@
                 <td class="bg-black">33</td>
                 <td class="bg-red">36</td>
               </tr>
-              <tr><!--中段-->
-                <td class="bg-black">2</td>
+              <tr>
+                <!--中段-->
+                <td class="bg-black"><button type="button" class="btn btn-dark btn-md p-0 w-100" data-toggle="modal"
+                  data-target="#modal-num2">2</button></td>
                 <td class="bg-red">5</td>
                 <td class="bg-black">8</td>
                 <td class="bg-black">11</td>
@@ -134,8 +146,10 @@
                 <td class="bg-red">32</td>
                 <td class="bg-black">35</td>
               </tr>
-              <tr><!--下段-->
-                <td class="bg-red">1</td>
+              <tr>
+                <!--下段-->
+                <td class="bg-red"><button type="button" class="btn btn- btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num1">1</button></td>
                 <td class="bg-black">4</td>
                 <td class="bg-red">7</td>
                 <td class="bg-black">10</td>
@@ -165,7 +179,44 @@
         </div>
       </div>
     </div>
-
+  </div>
+  <!-- num1 -->
+  <div class="modal fade" id="modal-num1" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="label-num1">何枚BETする？</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label>BET枚数:<input type="number" name="number" value="0"></label>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal2 -->
+  <div class="modal fade" id="modal-num2" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="label-num2">何枚BETする？</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label>BET枚数:<input type="number" name="number" value="0"></label>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 
