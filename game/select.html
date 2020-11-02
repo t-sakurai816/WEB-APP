@@ -107,9 +107,12 @@
             <thead>
               <tr>
                 <th></th>
-                <th colspan="4" class="align-middle">1st 12</th>
-                <th colspan="4" class="align-middle">2st 12</th>
-                <th colspan="4" class="align-middle">3st 12</th>
+                <th colspan="4"><button type="button" class="btn btn-success btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num-1st12">1st 12</button></th>
+                <th colspan="4"><button type="button" class="btn btn-success btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num-2st12">2st 12</button></th>
+                <th colspan="4"><button type="button" class="btn btn-success btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num-3st12">3st 12</button></th>
               </tr>
             </thead>
             <tbody>
@@ -201,12 +204,18 @@
             <thead>
               <tr>
                 <th></th>
-                <th colspan="2" class="align-middle">1 - 18</th>
-                <th colspan="2" class="align-middle">Even</th>
-                <th colspan="2" class="bg-red"></th>
-                <th colspan="2" class="bg-black"></th>
-                <th colspan="2" class="align-middle">Odd</th>
-                <th colspan="2" class="align-middle">19 - 36</th>
+                <th colspan="2"><button type="button" class="btn btn-success btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num-1-18">1 - 18</button></th>
+                <th colspan="2"><button type="button" class="btn btn-success btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num-even">Even</button></th>
+                <th colspan="2" class="bg-red"><button type="button" class="btn btn-danger btn-md p-0 w-100"
+                    data-toggle="modal" data-target="#modal-num-red">RED</button></th>
+                <th colspan="2" class="bg-black"><button type="button" class="btn btn-dark btn-md p-0 w-100"
+                    data-toggle="modal" data-target="#modal-num-black">BLACK</button></th>
+                <th colspan="2"><button type="button" class="btn btn-success btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num-odd">Odd</button></th>
+                <th colspan="2"><button type="button" class="btn btn-success btn-md p-0 w-100" data-toggle="modal"
+                    data-target="#modal-num19-36">19 - 36</button></th>
               </tr>
             </thead>
 
@@ -217,6 +226,182 @@
   </div>
   <!-- BETする数をテーブルから入力する -->
   <form action="result.php" method="post">
+    <!-- modal-1st12 -->
+    <div class="modal fade" id="modal-num-1st12" tabindex="-1" role="dialog" aria-labelledby="label1"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-1st12">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-2st12 -->
+    <div class="modal fade" id="modal-num-2st12" tabindex="-1" role="dialog" aria-labelledby="label1"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-2st12">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-3st12 -->
+    <div class="modal fade" id="modal-num-3st12" tabindex="-1" role="dialog" aria-labelledby="label1"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-3st12">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-1-18 -->
+    <div class="modal fade" id="modal-num-1-18" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-1-18">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-even -->
+    <div class="modal fade" id="modal-num-even" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-even">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-red -->
+    <div class="modal fade" id="modal-num-red" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-red">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-black -->
+    <div class="modal fade" id="modal-num-black" tabindex="-1" role="dialog" aria-labelledby="label1"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-black">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-odd -->
+    <div class="modal fade" id="modal-num-odd" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-odd">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-19-36 -->
+    <div class="modal fade" id="modal-num-19-36" tabindex="-1" role="dialog" aria-labelledby="label1"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="label-num-19-36">何枚BETする？</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <label>BET枚数:<input type="number" name="number" value="0"></label>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- modal0 -->
     <div class="modal fade" id="modal-num0" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
       <div class="modal-dialog" role="document">
