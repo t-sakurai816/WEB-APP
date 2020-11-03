@@ -103,7 +103,7 @@
         <!--表を表示-->
         表
         <!-- BETする数をテーブルから入力する -->
-        <form action="result.php" method="post">
+        <form oninput="result.value = input_add(number_1st12.value,b.value, c.value,d.value,e.value,f.value,g.value,h.value,i.value,j.value,k.value,l.value,m.value,n.value,o.value,p.value,q.value,r.value,s.value,t.value,u.value,v.value,w.value,x.value,y.value,z.value,aa.value,ab.value,ac.value,ad.value,ae.value,af.value,ag.value,ah.value,ai.value,aj.value,ak.value,al.value,am.value,an.value,ao.value,ap.value,aq.value,ar.value,at.value,as.value,at)" action="result.php" method="post">
           <div class="table-responsive">
             <!--tableをレスポンシブに-->
             <table class="table table-bordered">
@@ -239,7 +239,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-1st12" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_1st12" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -258,7 +258,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-2st12" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_2st12" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -277,7 +277,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-3st12" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_3st12" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -296,7 +296,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-1-18" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_1-18" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -315,7 +315,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-even" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_even" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -334,7 +334,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-red" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_red" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -353,7 +353,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-black" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_black" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -372,7 +372,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-odd" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_odd" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -391,7 +391,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-19-36" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_19-36" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -410,7 +410,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-0" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_0" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -429,7 +429,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-1" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_1" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -448,7 +448,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-2" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_2" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -467,7 +467,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-3" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_3" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -486,7 +486,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-4" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_4" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -505,7 +505,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-5" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_5" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -524,7 +524,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-6" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_6" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -543,7 +543,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-7" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_7" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -562,7 +562,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-8" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_8" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -581,7 +581,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-9" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_9" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -619,7 +619,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-11" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_11" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -638,7 +638,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-12" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_12" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -657,7 +657,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-13" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_13" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -676,7 +676,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-14" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_14" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -695,7 +695,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-15" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_15" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -714,7 +714,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-16" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_16" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -733,7 +733,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-17" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_17" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -752,7 +752,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-18" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_18" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -771,7 +771,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-19" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_19" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -790,7 +790,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-20" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_20" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -809,7 +809,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-21" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_21" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -828,7 +828,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-22" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_22" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -847,7 +847,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-23" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_23" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -866,7 +866,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-24" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_24" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -885,7 +885,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-25" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_25" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -904,7 +904,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-26" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_26" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -923,7 +923,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-27" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_27" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -942,7 +942,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-28" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_28" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -961,7 +961,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-29" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_29" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -980,7 +980,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-30" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_30" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -999,7 +999,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-31" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_31" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -1018,7 +1018,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-32" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_32" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -1037,7 +1037,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-33" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_33" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -1056,7 +1056,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-34" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_34" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -1075,7 +1075,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-35" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_35" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
@@ -1094,7 +1094,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <label>BET枚数:<input type="number" name="number-36" value="0"></label>
+          <label>BET枚数:<input type="number" name="number_36" value="0"></label>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal" data-num>OK</button>
