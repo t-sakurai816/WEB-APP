@@ -11,14 +11,6 @@ $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
 $register_name = $_POST['register_name'];
 $register_pass = $_POST['register_pass'];
 
-$link = mysqli_connect($host,$username,$password,$dbname);
-
-// 接続状況をチェックします
-if (mysqli_connect_errno()) {
-    die("Connection failed : " . mysqli_connect_error() . "\n");
-} else {
-    echo "<FONT COLOR=\"RED\"> Connection Success!!</FONT>\n";
-}
 
 try {
   $dbh = new PDO($dsn, $username, $password);
@@ -28,25 +20,25 @@ try {
   $msg = $e->getMessage();
 }
 
-// //フォームに入力されたnameがすでに登録されていないかチェック
-// $sql = "SELECT * FROM users WHERE name = :name";
-// $stmt = $dbh->prepare($sql);
-// $stmt->bindValue(':name', $mail);
-// $stmt->execute();
-// $member = $stmt->fetch();
-// if ($member['name'] === $mail) {
-//     $msg = '同じNameが存在します。別の名前に変更してください。';
-//     $url = '<a href="../index.html">戻る</a>';
-// } else {
-//     //登録されていなければinsert 
-//     $sql = "INSERT INTO users(name, pass) VALUES (:name, :pass)";
-//     $stmt = $dbh->prepare($sql);
-//     $stmt->bindValue(':name', $name);
-//     $stmt->bindValue(':pass', $pass);
-//     $stmt->execute();
-//     $msg = '会員登録が完了しました';
-//     $url = '<a href="select.html">いざ！ルーレット！</a>';
-// }
+//フォームに入力されたnameがすでに登録されていないかチェック
+$sql = "SELECT * FROM users WHERE name = :name";
+$stmt = $dbh->prepare($sql);
+$stmt->bindValue(':name', $mail);
+$stmt->execute();
+$member = $stmt->fetch();
+if ($member['name'] === $mail) {
+    $msg = '同じNameが存在します。別の名前に変更してください。';
+    $url = '<a href="../index.html">戻る</a>';
+} else {
+    //登録されていなければinsert 
+    $sql = "INSERT INTO users(name, pass) VALUES (:name, :pass)";
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindValue(':name', $name);
+    $stmt->bindValue(':pass', $pass);
+    $stmt->execute();
+    $msg = '会員登録が完了しました';
+    $url = '<a href="select.html">いざ！ルーレット！</a>';
+}
 ?>
 
 <h1><?php echo $msg; ?></h1><!--メッセージの出力-->
