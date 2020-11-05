@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 // DB情報（elastic beanstalkの環境変数から読み込む）
 $host = $_SERVER['DB_HOST'];
 $username = $_SERVER['DB_USERNAME'];
