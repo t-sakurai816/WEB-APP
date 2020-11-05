@@ -34,7 +34,7 @@ if ($member['name'] === $register_name) {
     $sql = "INSERT INTO roulette(name, pass) VALUES (:name, :pass)";
     $stmt = $dbh->prepare($sql);
     $stmt->bindValue(':name', $register_name);
-    $stmt->bindValue(':pass', $register_pass);
+    $stmt->bindValue(':pass', password_hash($register_pass, PASSWORD_DEFAULT));
     $stmt->execute();
     $msg = '会員登録が完了しました';
     $url = '<a href="../select.html">いざ！ルーレット！</a>';
