@@ -18,13 +18,13 @@ if (mysqli_connect_errno()) {
     echo "<FONT COLOR=\"RED\"> Connection Success!!</FONT>\n";
 }
 
-// try {
-//   $dbh = new PDO($host,$username,$password,$dbname);
-//   echo "接続成功";
-// } catch (PDOException $e) {
-//   // エラーのときエラーメッセージ
-//   $msg = $e->getMessage();
-// }
+try {
+  $dbh = new PDO($host,$username,$password,$dbname);
+  echo "接続成功";
+} catch (PDOException $e) {
+  // エラーのときエラーメッセージ
+  $msg = $e->getMessage();
+}
 
 // //フォームに入力されたnameがすでに登録されていないかチェック
 // $sql = "SELECT * FROM users WHERE name = :name";
@@ -34,7 +34,7 @@ if (mysqli_connect_errno()) {
 // $member = $stmt->fetch();
 // if ($member['name'] === $mail) {
 //     $msg = '同じNameが存在します。別の名前に変更してください。';
-//     $link = '<a href="../index.html">戻る</a>';
+//     $url = '<a href="../index.html">戻る</a>';
 // } else {
 //     //登録されていなければinsert 
 //     $sql = "INSERT INTO users(name, pass) VALUES (:name, :pass)";
@@ -43,9 +43,9 @@ if (mysqli_connect_errno()) {
 //     $stmt->bindValue(':pass', $pass);
 //     $stmt->execute();
 //     $msg = '会員登録が完了しました';
-//     $link = '<a href="select.html">いざ！ルーレット！</a>';
+//     $url = '<a href="select.html">いざ！ルーレット！</a>';
 // }
 ?>
 
 <h1><?php echo $msg; ?></h1><!--メッセージの出力-->
-<?php echo $link; ?>
+<?php echo $url; ?>
