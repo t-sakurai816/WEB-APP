@@ -30,6 +30,7 @@ if (password_verify($_POST['login_pass'], $member['pass'])) {
     // DBのユーザー情報をセッションに保存
     $_SESSION['id'] = $member['id'];
     $_SESSION['name'] = $member['name'];
+    print_r($_SESSION);
     $msg = 'ログインしました。';
     $link = '<a href="index.php">ホーム</a>';
 } else {
