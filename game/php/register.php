@@ -23,10 +23,10 @@ try {
 //フォームに入力されたnameがすでに登録されていないかチェック
 $sql = "SELECT * FROM users WHERE name = :name";
 $stmt = $dbh->prepare($sql);
-$stmt->bindValue(':name', $mail);
+$stmt->bindValue(':name', $name);
 $stmt->execute();
 $member = $stmt->fetch();
-if ($member['name'] === $mail) {
+if ($member['name'] === $name) {
     $msg = '同じNameが存在します。別の名前に変更してください。';
     $url = '<a href="../index.html">戻る</a>';
 } else {
