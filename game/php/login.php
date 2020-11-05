@@ -32,7 +32,7 @@ if (password_verify($_POST['login_pass'], $member['pass'])) {
     $_SESSION['name'] = $member['name'];
     print_r($_SESSION);
 
-    $alert = "<script type='text/javascript'>alert('testPageへ');location.href = 'https://webapp.massyu.net/game/testPage.php'</script>";
+    $alert = "<script type='text/javascript'>alert('testPageへ');location.href = 'https://webapp.massyu.net/game/php/testPage.php'</script>";
     echo $alert;
 } else {
 
