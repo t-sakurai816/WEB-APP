@@ -21,7 +21,7 @@ try {
 }
 
 //フォームに入力されたnameがすでに登録されていないかチェック
-$sql = "SELECT * FROM users WHERE name = :name";
+$sql = "SELECT * FROM roulette WHERE name = :name";
 $stmt = $dbh->prepare($sql);
 $stmt->bindValue(':name', $register_name);
 $stmt->execute();
@@ -31,7 +31,7 @@ if ($member['name'] === $register_name) {
     $url = '<a href="../index.html">戻る</a>';
 } else {
     //登録されていなければinsert 
-    $sql = "INSERT INTO users(name, pass) VALUES (:name, :pass)";
+    $sql = "INSERT INTO roulette(name, pass) VALUES (:name, :pass)";
     $stmt = $dbh->prepare($sql);
     $stmt->bindValue(':name', $register_name);
     $stmt->bindValue(':pass', $pass);
