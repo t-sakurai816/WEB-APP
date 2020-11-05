@@ -5,6 +5,8 @@ $username = $_SERVER['DB_USERNAME'];
 $password = $_SERVER['DB_PASSWORD'];
 $dbname = $_SERVER['DB_DATABASE'];
 
+$dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
+
 // フォームから受け取ったデータ
 $register_name = $_POST['register_name'];
 $register_pass = $_POST['register_pass'];
@@ -19,7 +21,7 @@ if (mysqli_connect_errno()) {
 }
 
 try {
-  $dbh = new PDO($host,$username,$password,$dbname);
+  $dbh = new PDO($dsn, $username, $password);
   echo "接続成功";
 } catch (PDOException $e) {
   // エラーのときエラーメッセージ
