@@ -31,7 +31,7 @@ if ($member['name'] === $register_name) {
     // $msg = '同じNameが存在します。別の名前に変更してください。';
     // $url = '<a href="../index.html">戻る</a>';
 
-    $alert = "<script type='text/javascript'>alert('同じ名前が存在します。別の名前にしてください。');</script>";
+    $alert = "<script type='text/javascript'>alert('同じ名前が存在します。別の名前にしてください。');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
     echo $alert;
 
     // // リダイレクト先のURLへ転送する
