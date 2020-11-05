@@ -1,5 +1,6 @@
 <?php
 session_start();
+print_r($_SESSION);
 $username = $_SESSION['name'];
 print_r($_SESSION);
 if (isset($_SESSION['id'])) {//ログインしているとき
