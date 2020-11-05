@@ -34,12 +34,12 @@ if ($member['name'] === $register_name) {
     $alert = "<script type='text/javascript'>alert('同じ名前が存在します。別の名前にしてください。');</script>";
     echo $alert;
 
-    // リダイレクト先のURLへ転送する
-    $url = 'https://webapp.massyu.net/game/index.html';
-    header('Location: ' . $url, true, 302);
+    // // リダイレクト先のURLへ転送する
+    // $url = 'https://webapp.massyu.net/game/index.html';
+    // header('Location: ' . $url, true, 302);
     
-     // すべての出力を終了
-    exit;
+    //  // すべての出力を終了
+    // exit;
 
 } else {
     //登録されていなければinsert 
