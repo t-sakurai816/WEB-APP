@@ -1,5 +1,5 @@
 <?php
-// session_start();
+session_start();
 // DB情報（elastic beanstalkの環境変数から読み込む）
 $host = $_SERVER['DB_HOST'];
 $username = $_SERVER['DB_USERNAME'];
@@ -32,7 +32,7 @@ if (password_verify($_POST['login_pass'], $member['pass'])) {
     $_SESSION['name'] = $member['name'];
     print_r($_SESSION);
 
-    $alert = "<script type='text/javascript'>alert('testPageへ');location.href = 'https://webapp.massyu.net/game/php/testPage.php'</script>";
+    $alert = "<script type='text/javascript'>alert('testPageへ');location.href = 'testPage.php'</script>";
     echo $alert;
 } else {
 
