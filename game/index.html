@@ -17,8 +17,9 @@
 <body>
   <div class="container">
     <h1>ルーレットゲーム</h1>
-      <!--中央寄せ-->
-      <div class="col-md-4 offset-md-4">
+    <!--中央寄せ-->
+    <div class="col-md-4 offset-md-4">
+      <form action="" method="post">
         <h3>〜登録〜</h3>
         <!--名前を入力-->
         <div class="input-group mb-3">
@@ -35,12 +36,15 @@
           <input type="password" class="form-control " name="register_pass" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-default">
         </div>
-      </div>
+        <button type="submit" class="btn btn-primary">登録する！</button>
+      </form>
+    </div>
 
-      <!-- 破線 -->
-      <hr class="cp_hr02" />
+    <!-- 破線 -->
+    <hr class="cp_hr02" />
 
-      <div class="col-md-4 offset-md-4">
+    <div class="col-md-4 offset-md-4">
+      <form action="login.php" method="post">
         <h3>〜ログイン〜</h3>
         <div class="col-xs-4">
           <!--名前を入力-->
@@ -59,10 +63,11 @@
             <input type="password" class="form-control " name="login_pass" aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-default">
           </div>
-          <button type="button" class="btn btn-primary">開始する!</button>
+          <button type="submit " class="btn btn-primary">開始する!</button>
         </div>
-      </div>
+      </form>
     </div>
+  </div>
 
 </body>
 
