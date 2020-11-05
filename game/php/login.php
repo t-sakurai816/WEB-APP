@@ -31,11 +31,13 @@ if (password_verify($_POST['login_pass'], $member['pass'])) {
     $_SESSION['id'] = $member['id'];
     $_SESSION['name'] = $member['name'];
     print_r($_SESSION);
-    $msg = 'ログインしました。';
-    $link = '<a href="index.php">ホーム</a>';
+
+    $alert = "<script type='text/javascript'>alert('testPageへ');location.href = 'https://webapp.massyu.net/game/testPage.php'</script>";
+    echo $alert;
 } else {
-    $msg = 'メールアドレスもしくはパスワードが間違っています。';
-    $link = '<a href="login.php">戻る</a>';
+
+    $alert = "<script type='text/javascript'>alert('IDかパスワードが間違っています');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
+    echo $alert;
 }
 ?>
 
