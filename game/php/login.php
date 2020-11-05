@@ -24,10 +24,10 @@ $sql = "SELECT * FROM roulette WHERE name = :name";
 $stmt = $dbh->prepare($sql);
 $stmt->bindValue(':name', $login_name);
 $stmt->execute();
-$member = $stmt->fetch();
+$member = $stmt->fetch(PDO::FETCH_BOTH);
 //指定したハッシュがパスワードにマッチしているかチェック
-if (password_verify($_POST['login_pass'], $member['pass']) {
-    //DBのユーザー情報をセッションに保存
+if (password_verify($_POST['login_pass'], $member['pass'])) {
+    // DBのユーザー情報をセッションに保存
     $_SESSION['id'] = $member['id'];
     $_SESSION['name'] = $member['name'];
     $msg = 'ログインしました。';
