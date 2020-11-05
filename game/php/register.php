@@ -37,7 +37,7 @@ if ($member['name'] === $register_name) {
     $stmt->bindValue(':pass', $pass);
     $stmt->execute();
     $msg = '会員登録が完了しました';
-    $url = '<a href="select.html">いざ！ルーレット！</a>';
+    $url = '<a href="../select.html">いざ！ルーレット！</a>';
 }
 ?>
 
