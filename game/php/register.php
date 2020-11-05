@@ -9,13 +9,22 @@ $dbname = $_SERVER['DB_DATABASE'];
 $register_name = $_POST['register_name'];
 $register_pass = $_POST['register_pass'];
 
-try {
-  $dbh = new PDO($host,$username,$password,$dbname);
-  echo "接続成功";
-} catch (PDOException $e) {
-  // エラーのときエラーメッセージ
-  $msg = $e->getMessage();
+$link = mysqli_connect($host,$username,$password,$dbname);
+
+// 接続状況をチェックします
+if (mysqli_connect_errno()) {
+    die("Connection failed : " . mysqli_connect_error() . "\n");
+} else {
+    echo "<FONT COLOR=\"RED\"> Connection Success!!</FONT>\n";
 }
+
+// try {
+//   $dbh = new PDO($host,$username,$password,$dbname);
+//   echo "接続成功";
+// } catch (PDOException $e) {
+//   // エラーのときエラーメッセージ
+//   $msg = $e->getMessage();
+// }
 
 // //フォームに入力されたnameがすでに登録されていないかチェック
 // $sql = "SELECT * FROM users WHERE name = :name";
