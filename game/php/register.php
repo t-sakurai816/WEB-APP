@@ -14,7 +14,7 @@ $register_pass = $_POST['register_pass'];
 
 try {
   $dbh = new PDO($dsn, $username, $password);
-  echo "接続成功";
+  // echo "接続成功";
 } catch (PDOException $e) {
   // エラーのときエラーメッセージ
   $msg = $e->getMessage();
@@ -27,8 +27,20 @@ $stmt->bindValue(':name', $register_name);
 $stmt->execute();
 $member = $stmt->fetch();
 if ($member['name'] === $register_name) {
-    $msg = '同じNameが存在します。別の名前に変更してください。';
-    $url = '<a href="../index.html">戻る</a>';
+    //既に同じ名前がある時
+    // $msg = '同じNameが存在します。別の名前に変更してください。';
+    // $url = '<a href="../index.html">戻る</a>';
+
+    $alert = "<script type='text/javascript'>alert('同じ名前が存在します。別の名前にしてください。');</script>";
+    echo $alert;
+
+    // リダイレクト先のURLへ転送する
+    $url = 'https://webapp.massyu.net/game/index.html';
+    header('Location: ' . $url, true, 302);
+    
+     // すべての出力を終了
+    exit;
+
 } else {
     //登録されていなければinsert 
     $sql = "INSERT INTO roulette(name, pass) VALUES (:name, :pass)";
@@ -36,10 +48,15 @@ if ($member['name'] === $register_name) {
     $stmt->bindValue(':name', $register_name);
     $stmt->bindValue(':pass', password_hash($register_pass, PASSWORD_DEFAULT));
     $stmt->execute();
-    $msg = '会員登録が完了しました';
-    $url = '<a href="../select.html">いざ！ルーレット！</a>';
+    // $msg = '会員登録が完了しました';
+    // $url = '<a href="../select.html">いざ！ルーレット！</a>';
+
+    // リダイレクト先のURLへ転送する
+    $url = 'https://webapp.massyu.net/game/select.html';
+    header('Location: ' . $url, true, 302);
+
+    // すべての出力を終了
+    exit;
 }
 ?>
 
-<h1><?php echo $msg; ?></h1><!--メッセージの出力-->
-<?php echo $url; ?>
