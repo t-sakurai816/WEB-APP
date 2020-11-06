@@ -18,9 +18,11 @@ try {
   $dbh = new PDO($dsn, $username, $password);
   echo "接続成功";
   $sql = "select gold from roulette where id=" . $id;
-  $money = $dbh->prepare($sql);
+  $result = $dbh->prepare($sql);
   echo $sql;
-  echo $money;
+  while($row = $result->fetch(PDO::FETCH_ASSOC)){
+    $money .= $row['gold'];
+  }
   $dbh = null;
   
 } catch (PDOException $e) {
