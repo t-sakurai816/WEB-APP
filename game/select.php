@@ -8,7 +8,7 @@ $password = $_SERVER['DB_PASSWORD'];
 $dbname = $_SERVER['DB_DATABASE'];
 
 // SESSIONから名前を取得
-$username = $_SESSION['name'];
+$login_name = $_SESSION['name'];
 
 // SESSIONのIDを代入
 $id = $_SESSION['id'];
@@ -29,7 +29,7 @@ try {
 
 
 if (isset($_SESSION['id'])) {//ログインしているとき
-    $print_name = 'Welcome to ' . htmlspecialchars($username, \ENT_QUOTES, 'UTF-8') . '!!';
+    $print_name = 'Welcome to ' . htmlspecialchars($login_name, \ENT_QUOTES, 'UTF-8') . '!!';
     $print_money = '所持コイン数：' .htmlspecialchars($money, \ENT_QUOTES, 'UTF-8');
 } else {//ログインしていない時
   $alert = "<script type='text/javascript'>alert('ログインしていません。ログインしてください');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
