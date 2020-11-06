@@ -19,6 +19,8 @@ try {
   $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
   $sql = "select gold from roulette where id=" . $id;
   $money = $dbh -> query($sql);
+  echo $sql;
+  $dbh = null;
   
 } catch (PDOException $e) {
   // エラーのときエラーメッセージ
