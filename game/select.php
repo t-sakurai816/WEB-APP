@@ -16,11 +16,11 @@ $id = $_SESSION['id'];
 try {
   $dbh = new PDO($dsn, $username, $password);
   echo "接続成功";
-  $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
-  $sql = "select gold from roulette where id=" . $id;
-  $money = $dbh->prepare($sql);
-  echo $sql;
-  $dbh = null;
+  // $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
+  // $sql = "select gold from roulette where id=" . $id;
+  // $money = $dbh->prepare($sql);
+  // echo $sql;
+  // $dbh = null;
   
 } catch (PDOException $e) {
   // エラーのときエラーメッセージ
