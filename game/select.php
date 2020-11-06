@@ -18,12 +18,11 @@ try {
   $dbh = new PDO($dsn, $username, $password);
   echo "接続成功";
   $sql = "select gold from roulette where id=" . $id;
-  $result = $dbh->prepare($sql);
+  $stmt = $dbh->prepare($sql);
   echo $sql;
-  while($row = $result->fetch(PDO::FETCH_ASSOC)){
-    $money .= $row['gold'];
-  }
-  $dbh = null;
+  $stmt->execute();
+  $result = $stmt->fetch();
+  $money = $result['gold'];
   
 } catch (PDOException $e) {
   // エラーのときエラーメッセージ
