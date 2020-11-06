@@ -45,7 +45,7 @@ if ($member['name'] === $register_name) {
     // $msg = '会員登録が完了しました';
     // $url = '<a href="../select.html">いざ！ルーレット！</a>';
 
-    $alert = "<script type='text/javascript'>alert('いざ！ルーレット！');location.href = 'https://webapp.massyu.net/game/select.html'</script>";
+    $alert = "<script type='text/javascript'>alert('いざ！ルーレット！');location.href = 'https://webapp.massyu.net/game/select.php'</script>";
     echo $alert;
 }
 ?>
