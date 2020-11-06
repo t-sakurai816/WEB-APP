@@ -20,6 +20,7 @@ try {
   $sql = "select gold from roulette where id=" . $id;
   $money = $dbh->prepare($sql);
   echo $sql;
+  echo $money;
   $dbh = null;
   
 } catch (PDOException $e) {
