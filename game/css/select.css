@@ -1,10 +1,6 @@
 .container{
-  background-color: aqua;
   margin-top: 3px;/*ちょっと下に下げる*/
-}
-
-#money{
-  background-color: red;
+  text-align: center;
 }
 
 #form{
@@ -13,8 +9,20 @@
 
 #table{
   background-color: #28a745;
+  padding:20px 20px;
 }
 
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.result{
+  padding:30px;
+}
 
 .align-middle{/*縦連結*/
   text-align: center;
