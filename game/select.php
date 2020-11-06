@@ -16,10 +16,9 @@ $id = $_SESSION['id'];
 try {
   $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
   $dbh = new PDO($dsn, $username, $password);
-  echo "接続成功";
+  // echo "接続成功";
   $sql = "select gold from roulette where id=" . $id;
   $stmt = $dbh->prepare($sql);
-  echo $sql;
   $stmt->execute();
   $result = $stmt->fetch();
   $money = $result['gold'];
