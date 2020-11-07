@@ -19,7 +19,7 @@ try {
   while($row = $stmt->fetch()){
     $rows[] = $row;
   }
-  echo $rows;//デバッグ用
+  print_r($rows);//デバッグ用
 
   $dbh = null;
 } catch (PDOException $e) {
