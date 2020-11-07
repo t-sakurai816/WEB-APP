@@ -8,12 +8,12 @@ $dbname = $_SERVER['DB_DATABASE'];
 try {
   $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
   $dbh = new PDO($dsn, $username, $password);
-  echo "接続成功";
+  // echo "接続成功";
   //所持枚数でソート。名前も出力。最大数10
-  $sql = "SELECT name, gold, RANK() OVER(ORDER BY id DESC) AS rank_result FROM roulette LIMIT 10;";
+  $sql = "SELECT name, gold, RANK() OVER(ORDER BY gold DESC) AS rank_result FROM roulette LIMIT 10;";
   $stmt = $dbh->prepare($sql);
   $stmt->execute();
-  echo $row;//デバック用
+  // echo $row;//デバック用
 
   //配列にSQLの実行結果を入れる
   while($row = $stmt->fetch()){
