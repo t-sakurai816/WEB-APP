@@ -19,6 +19,7 @@ try {
   while($row = $stmt->fetch()){
     $rows[] = $row;
   }
+  echo $rows;//デバッグ用
 
   $dbh = null;
 } catch (PDOException $e) {
@@ -65,7 +66,7 @@ try {
           <tr>
             <td scope="row"><?php echo $row['rank_result']; ?></td>
             <td><?php echo $row['name']; ?></td>
-            <td><?php echo $row['gold'] ?></td>
+            <td><?php echo $row['gold']; ?></td>
           </tr>
           <?php
             }
