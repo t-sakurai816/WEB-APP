@@ -13,13 +13,11 @@ try {
   $sql = "SELECT `name`, `gold`, RANK() OVER(ORDER BY gold DESC) AS rank_result FROM roulette LIMIT 10;";
   $stmt = $dbh->prepare($sql);
   $stmt->execute();
-  // echo $row;//デバック用
 
   //配列にSQLの実行結果を入れる
   while($row = $stmt->fetch()){
     $rows[] = $row;
   }
-  print_r($rows);//デバッグ用
 
   $dbh = null;
 } catch (PDOException $e) {
@@ -65,7 +63,7 @@ try {
           ?>
           <tr>
             <td scope="row"><?php echo $row['rank_result']; ?></td>
-            <td><?php echo $row['name']; ?></td>
+            <td><?php echo htmlspecialchars($row['name'], \ENT_QUOTES, 'UTF-8'); ?></td>
             <td><?php echo $row['gold']; ?></td>
           </tr>
           <?php
