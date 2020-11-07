@@ -46,6 +46,28 @@ if ($member['name'] === $register_name) {
     // $msg = '会員登録が完了しました';
     // $url = '<a href="../select.html">いざ！ルーレット！</a>';
 
+    // insertが終わったらログイン処理
+    //各変数が上書きする
+    $sql = "SELECT * FROM roulette WHERE name = :name";
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindValue(':name', $register_name);
+    $stmt->execute();
+    $member = $stmt->fetch(PDO::FETCH_BOTH);
+    //指定したハッシュがパスワードにマッチしているかチェック
+    if (password_verify($_POST['login_pass'], $member['pass'])) {
+      // DBのユーザー情報をセッションに保存
+      $_SESSION['id'] = $member['id'];
+      $_SESSION['name'] = $member['name'];
+      // print_r($_SESSION);
+
+    $alert = "<script type='text/javascript'>alert('いざルーレット！！');location.href = 'https://webapp.massyu.net/game/select.php'</script>";
+    echo $alert;
+} else {
+
+    $alert = "<script type='text/javascript'>alert('IDかパスワードが間違っています');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
+    echo $alert;
+}
+
     $alert = "<script type='text/javascript'>alert('いざ！ルーレット！');location.href = 'https://webapp.massyu.net/game/select.php'</script>";
     echo $alert;
 }
