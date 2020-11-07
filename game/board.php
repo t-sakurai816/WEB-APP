@@ -64,7 +64,7 @@ try {
           ?>
           <tr>
             <td scope="row"><?php echo $row['rank_result']; ?></td>
-            <td><?php echo htmlspecialchars($row['name'], EVT_QUOTES, 'UTF-8'); ?></td>
+            <td><?php echo htmlspecialchars($row['name'], \EVT_QUOTES, 'UTF-8'); ?></td>
             <td><?php echo $row['gold'] ?></td>
           </tr>
           <?php
