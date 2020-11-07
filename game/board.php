@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 // DB情報（elastic beanstalkの環境変数から読み込む）
 $host = $_SERVER['DB_HOST'];
 $username = $_SERVER['DB_USERNAME'];
@@ -10,11 +8,12 @@ $dbname = $_SERVER['DB_DATABASE'];
 try {
   $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
   $dbh = new PDO($dsn, $username, $password);
-  // echo "接続成功";
+  echo "接続成功";
   //所持枚数でソート。名前も出力。最大数10
-  $sql = "SELECT name, gold, RANK() OVER(ORDER BY id DESC) AS rank FROM roulette LIMIT 10;";
+  $sql = "SELECT name, gold, RANK() OVER(ORDER BY id DESC) AS rank_result FROM roulette LIMIT 10;";
   $stmt = $dbh->prepare($sql);
   $stmt->execute();
+  echo $row;//デバック用
 
   //配列にSQLの実行結果を入れる
   while($row = $stmt->fetch()){
@@ -64,7 +63,7 @@ try {
             foreach($rows as $row){
           ?>
           <tr>
-            <td scope="row"><?php echo $row['rank']; ?></td>
+            <td scope="row"><?php echo $row['rank_result']; ?></td>
             <td><?php echo htmlspecialchars($row['name'], EVT_QUOTES, 'UTF-8'); ?></td>
             <td><?php echo $row['gold'] ?></td>
           </tr>
