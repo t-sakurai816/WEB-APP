@@ -10,7 +10,7 @@ try {
   $dbh = new PDO($dsn, $username, $password);
   // echo "接続成功";
   //所持枚数でソート。名前も出力。最大数10
-  $sql = "SELECT name, gold, RANK() OVER(ORDER BY gold DESC) AS rank_result FROM roulette LIMIT 10;";
+  $sql = "SELECT `name`, `gold`, RANK() OVER(ORDER BY gold DESC) AS rank_result FROM roulette LIMIT 10;";
   $stmt = $dbh->prepare($sql);
   $stmt->execute();
   // echo $row;//デバック用
