@@ -1,0 +1,24 @@
+.container{
+  margin: 10px auto;/*ちょっと下に下げる*/
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 3rem;/*普通のh2より3倍大きい*/
+}
+
+#hari img{/*画像の中央寄せ*/
+  display: block;
+  margin:auto;
+}
+
+#roulette img{/*画像の中央寄せ*/
+  display: block;
+  margin:auto;
+  height: 400px;
+  width: auto;
+}
