@@ -54,7 +54,7 @@ if ($member['name'] === $register_name) {
     $stmt->execute();
     $member = $stmt->fetch(PDO::FETCH_BOTH);
     //指定したハッシュがパスワードにマッチしているかチェック
-    if (password_verify($_POST['login_pass'], $member['pass'])) {
+    if (password_verify($_POST['register_pass'], $member['pass'])) {
       // DBのユーザー情報をセッションに保存
       $_SESSION['id'] = $member['id'];
       $_SESSION['name'] = $member['name'];
