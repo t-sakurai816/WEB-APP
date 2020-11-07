@@ -62,13 +62,7 @@ if ($member['name'] === $register_name) {
 
     $alert = "<script type='text/javascript'>alert('いざルーレット！！');location.href = 'https://webapp.massyu.net/game/select.php'</script>";
     echo $alert;
-} else {
-
-  $alert = "<script type='text/javascript'>alert('いざ！ルーレット！');location.href = 'https://webapp.massyu.net/game/select.php'</script>";
-  echo $alert;
-
-  }
-
+}
 }
 ?>
 
