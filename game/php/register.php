@@ -64,12 +64,11 @@ if ($member['name'] === $register_name) {
     echo $alert;
 } else {
 
-    $alert = "<script type='text/javascript'>alert('IDかパスワードが間違っています');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
-    echo $alert;
-}
+  $alert = "<script type='text/javascript'>alert('いざ！ルーレット！');location.href = 'https://webapp.massyu.net/game/select.php'</script>";
+  echo $alert;
 
-    $alert = "<script type='text/javascript'>alert('いざ！ルーレット！');location.href = 'https://webapp.massyu.net/game/select.php'</script>";
-    echo $alert;
+  }
+
 }
 ?>
 
