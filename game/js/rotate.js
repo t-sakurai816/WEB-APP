@@ -54,30 +54,189 @@ $(() => {
   const result = () => {
     switch (stopNumber) {
 
+      // //0の時の処理
+      // case 0:
+      //   $("#result span").text("0でした！")
+      //   break;
+
       //1の時の処理
       case 1:
-        $("#result span").text("①でした！")
+        $("#result span").text("1でした！")
         break;
 
       //2の時の処理
       case 2:
-        $("#result span").text("②でした！")
+        $("#result span").text("2でした！")
         break;
 
       //3の時の処理
       case 3:
-        $("#result span").text("③でした！")
+        $("#result span").text("3でした！")
         break;
 
       //4の時の処理 
       case 4:
-        $("#result span").text("④でした！")
+        $("#result span").text("4でした！")
         break;
 
       //5の時の処理
       case 5:
-        $("#result span").text("⑤でした！")
+        $("#result span").text("5でした！")
         break;
+
+      //6の時の処理
+      case 6:
+        $("#result span").text("6でした！")
+        break;
+
+      //7の時の処理
+      case 7:
+        $("#result span").text("7でした！")
+        break;
+
+      //8の時の処理
+      case 8:
+        $("#result span").text("8でした！")
+        break;
+
+      //9の時の処理 
+      case 9:
+        $("#result span").text("9でした！")
+        break;
+
+      //10の時の処理
+      case 10:
+        $("#result span").text("10でした！")
+        break;
+      //11の時の処理
+      case 11:
+        $("#result span").text("11でした！")
+        break;
+
+      //12の時の処理
+      case 12:
+        $("#result span").text("12でした！")
+        break;
+
+      //13の時の処理
+      case 13:
+        $("#result span").text("13でした！")
+        break;
+
+      //14の時の処理 
+      case 14:
+        $("#result span").text("14でした！")
+        break;
+
+      //15の時の処理
+      case 15:
+        $("#result span").text("15でした！")
+        break;
+
+      //16の時の処理
+      case 16:
+        $("#result span").text("16でした！")
+        break;
+
+      //17の時の処理
+      case 17:
+        $("#result span").text("17でした！")
+        break;
+
+      //18の時の処理
+      case 18:
+        $("#result span").text("18でした！")
+        break;
+
+      //19の時の処理 
+      case 19:
+        $("#result span").text("19でした！")
+        break;
+
+      //20の時の処理
+      case 20:
+        $("#result span").text("20でした！")
+        break;
+
+      //21の時の処理
+      case 21:
+        $("#result span").text("21でした！")
+        break;
+
+      //22の時の処理
+      case 22:
+        $("#result span").text("22でした！")
+        break;
+
+      //23の時の処理
+      case 23:
+        $("#result span").text("23でした！")
+        break;
+
+      //24の時の処理 
+      case 24:
+        $("#result span").text("24でした！")
+        break;
+
+      //25の時の処理
+      case 25:
+        $("#result span").text("25でした！")
+        break;
+
+      //26の時の処理
+      case 26:
+        $("#result span").text("26でした！")
+        break;
+
+      //27の時の処理
+      case 27:
+        $("#result span").text("27でした！")
+        break;
+
+      //28の時の処理
+      case 28:
+        $("#result span").text("28でした！")
+        break;
+
+      //29の時の処理 
+      case 29:
+        $("#result span").text("29でした！")
+        break;
+
+      //30の時の処理
+      case 30:
+        $("#result span").text("30でした！")
+        break;
+      //31の時の処理
+      case 31:
+        $("#result span").text("31でした！")
+        break;
+
+      //32の時の処理
+      case 32:
+        $("#result span").text("32でした！")
+        break;
+
+      //33の時の処理
+      case 33:
+        $("#result span").text("33でした！")
+        break;
+
+      //34の時の処理 
+      case 34:
+        $("#result span").text("34でした！")
+        break;
+
+      //35の時の処理
+      case 35:
+        $("#result span").text("35でした！")
+        break;
+
+      //36の時の処理
+      case 36:
+        $("#result span").text("36でした！")
+        break;
+
     };
   };
 });
