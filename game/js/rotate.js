@@ -1,8 +1,8 @@
 $(() => {
 
-  const speed = 10;   //ルーレットの回転速度
+  const speed = 100;   //ルーレットの回転速度
   const divide = 37;   //ルーレットの分割数
-  const timeout = 2000;   //○秒後に停止
+  const timeout = 3000;   //○秒後に停止
 
   //停止位置の設定。1～360までの乱数を取得して挿入する
   const stopAngle = Math.round(Math.random() * 360 + 0.5);
