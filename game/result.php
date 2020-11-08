@@ -7,9 +7,29 @@ require('php/db-info.php');
 // SESSIONから名前を取得
 $login_name = $_SESSION['name'];
 
+// SESSIONのIDを代入
+$id = $_SESSION['id'];
+
+try {
+  $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
+  $dbh = new PDO($dsn, $username, $password);
+  // echo "接続成功";
+  $sql = "select gold from roulette where id= :id;";
+  $stmt = $dbh->prepare($sql);
+  $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+  $stmt->execute();
+  $result = $stmt->fetch();
+  $money = $result['gold'];
+  
+} catch (PDOException $e) {
+  // エラーのときエラーメッセージ
+  $alert = $e->getMessage();
+  echo $alert;
+}
+
 if (isset($_SESSION['id'])) {//ログインしているとき
   $print_name = htmlspecialchars($login_name, \ENT_QUOTES, 'UTF-8');
-
+  $print_money = '所持コイン数：' .htmlspecialchars($money, \ENT_QUOTES, 'UTF-8');
 } else {//ログインしていない時
   $alert = "<script type='text/javascript'>alert('ログインしていません。ログインしてください');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
   echo $alert;
