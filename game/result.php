@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+// DB情報（elastic beanstalkの環境変数から読み込む）
+require('php/db-info.php');
+
+// SESSIONから名前を取得
+$login_name = $_SESSION['name'];
+
+// SESSIONのIDを代入
+$id = $_SESSION['id'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
