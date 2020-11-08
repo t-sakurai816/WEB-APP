@@ -22,4 +22,10 @@ function Subtraction($money, $id){//DBからgoldの値を引くプログラム
 }
 
 // Subtraction(300, 9);
+$num = $_POST['total'];
+echo $num;
+
+$id = 4;
+
+Subtraction($num, $id);
 ?>
