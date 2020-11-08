@@ -10,6 +10,59 @@ $login_name = $_SESSION['name'];
 // SESSIONのIDを代入
 $id = $_SESSION['id'];
 
+// フォームから受け取ったデータ
+$array = array();//初期化
+$array = array(//フォームから受けとったデータを配列に代入
+  'number_1st12' => $_POST['number_1st12'],
+  'number_2st12' => $_POST['number_2st12'],
+  'number_3st12' => $_POST['number_3st12'],
+  'number_0' => $_POST['number_0'],
+  'number_1' => $_POST['number_2'],
+  'number_2' => $_POST['number_3'],
+  'number_3' => $_POST['number_3'],
+  'number_4' => $_POST['number_4'],
+  'number_5' => $_POST['number_5'],
+  'number_6' => $_POST['number_6'],
+  'number_7' => $_POST['number_7'],
+  'number_8' => $_POST['number_8'],
+  'number_9' => $_POST['number_9'],
+  'number_10' => $_POST['number_10'],
+  'number_11' => $_POST['number_11'],
+  'number_12' => $_POST['number_12'],
+  'number_13' => $_POST['number_13'],
+  'number_14' => $_POST['number_14'],
+  'number_15' => $_POST['number_15'],
+  'number_16' => $_POST['number_16'],
+  'number_17' => $_POST['number_17'],
+  'number_18' => $_POST['number_18'],
+  'number_19' => $_POST['number_19'],
+  'number_20' => $_POST['number_20'],
+  'number_21' => $_POST['number_21'],
+  'number_22' => $_POST['number_22'],
+  'number_23' => $_POST['number_23'],
+  'number_24' => $_POST['number_24'],
+  'number_25' => $_POST['number_25'],
+  'number_26' => $_POST['number_26'],
+  'number_27' => $_POST['number_27'],
+  'number_28' => $_POST['number_28'],
+  'number_29' => $_POST['number_29'],
+  'number_30' => $_POST['number_30'],
+  'number_31' => $_POST['number_31'],
+  'number_32' => $_POST['number_32'],
+  'number_33' => $_POST['number_33'],
+  'number_34' => $_POST['number_34'],
+  'number_35' => $_POST['number_35'],
+  'number_36' => $_POST['number_36'],
+  'number_1_18' => $_POST['number_1_18'],
+  'number_even' => $_POST['number_even'],
+  'number_red' => $_POST['number_red'],
+  'number_black' => $_POST['number_black'],
+  'number_odd' => $_POST['number_odd'],
+  'number_19_36' => $_POST['number_19_36']
+);
+
+print_r($array);//デバッグ用
+
 try {
   $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
   $dbh = new PDO($dsn, $username, $password);
@@ -29,7 +82,7 @@ try {
 
 if (isset($_SESSION['id'])) {//ログインしているとき
   $print_name = htmlspecialchars($login_name, \ENT_QUOTES, 'UTF-8');
-  $print_money = '所持コイン数：' .htmlspecialchars($money, \ENT_QUOTES, 'UTF-8');
+  $print_money = htmlspecialchars($money, \ENT_QUOTES, 'UTF-8');
 } else {//ログインしていない時
   $alert = "<script type='text/javascript'>alert('ログインしていません。ログインしてください');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
   echo $alert;
