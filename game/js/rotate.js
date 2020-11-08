@@ -22,7 +22,7 @@ $(() => {
 
 
   //クルクル処理。5ミリ秒毎にspeedの数値分画像が回転します。
-  let rotation = setInterval(function () {
+  const rotation = setInterval(function () {
     $("#mato").rotate(angle);
     angle += speed;
   }, 5);
@@ -59,182 +59,187 @@ $(() => {
       //   $("#result span").text("0でした！")
       //   break;
 
-      //1の時の処理
+      //26の時の処理
       case 1:
-        $("#result span").text("1でした！")
-        break;
-
-      //2の時の処理
-      case 2:
-        $("#result span").text("2でした！")
+        $("#result span").text("赤の26でした！")
         break;
 
       //3の時の処理
+      case 2:
+        $("#result span").text("黒の3でした！")
+        break;
+
+      //35の時の処理
       case 3:
-        $("#result span").text("3でした！")
+        $("#result span").text("赤の35でした！")
         break;
 
-      //4の時の処理 
+      //12の時の処理 
       case 4:
-        $("#result span").text("4でした！")
+        $("#result span").text("黒の12でした！")
         break;
 
-      //5の時の処理
+      //28の時の処理
       case 5:
-        $("#result span").text("5でした！")
-        break;
-
-      //6の時の処理
-      case 6:
-        $("#result span").text("6でした！")
+        $("#result span").text("赤の28でした！")
         break;
 
       //7の時の処理
+      case 6:
+        $("#result span").text("黒の7でした！")
+        break;
+
+      //29の時の処理
       case 7:
-        $("#result span").text("7でした！")
+        $("#result span").text("赤の29でした！")
         break;
 
-      //8の時の処理
+      //18の時の処理
       case 8:
-        $("#result span").text("8でした！")
+        $("#result span").text("黒の18でした！")
         break;
 
-      //9の時の処理 
+      //22の時の処理 
       case 9:
-        $("#result span").text("9でした！")
+        $("#result span").text("赤の22でした！")
         break;
 
-      //10の時の処理
+      //9の時の処理
       case 10:
-        $("#result span").text("10でした！")
+        $("#result span").text("黒の9でした！")
         break;
-      //11の時の処理
+      //31の時の処理
       case 11:
-        $("#result span").text("11でした！")
+        $("#result span").text("赤31でした！")
         break;
 
-      //12の時の処理
+      //14の時の処理
       case 12:
-        $("#result span").text("12でした！")
+        $("#result span").text("黒の14でした！")
         break;
 
-      //13の時の処理
+      //20の時の処理
       case 13:
-        $("#result span").text("13でした！")
+        $("#result span").text("赤の20でした！")
         break;
 
-      //14の時の処理 
+      //1の時の処理 
       case 14:
-        $("#result span").text("14でした！")
+        $("#result span").text("黒の1でした！")
         break;
 
-      //15の時の処理
+      //33の時の処理
       case 15:
-        $("#result span").text("15でした！")
+        $("#result span").text("赤の33でした！")
         break;
 
       //16の時の処理
       case 16:
-        $("#result span").text("16でした！")
+        $("#result span").text("黒の16でした！")
         break;
 
-      //17の時の処理
+      //24の時の処理
       case 17:
-        $("#result span").text("17でした！")
+        $("#result span").text("赤の24でした！")
         break;
 
-      //18の時の処理
+      //5の時の処理
       case 18:
-        $("#result span").text("18でした！")
+        $("#result span").text("黒の5でした！")
         break;
 
-      //19の時の処理 
+      //10の時の処理 
       case 19:
-        $("#result span").text("19でした！")
-        break;
-
-      //20の時の処理
-      case 20:
-        $("#result span").text("20でした！")
-        break;
-
-      //21の時の処理
-      case 21:
-        $("#result span").text("21でした！")
-        break;
-
-      //22の時の処理
-      case 22:
-        $("#result span").text("22でした！")
+        $("#result span").text("赤の10でした！")
         break;
 
       //23の時の処理
-      case 23:
-        $("#result span").text("23でした！")
+      case 20:
+        $("#result span").text("黒の23でした！")
         break;
 
-      //24の時の処理 
-      case 24:
-        $("#result span").text("24でした！")
-        break;
-
-      //25の時の処理
-      case 25:
-        $("#result span").text("25でした！")
-        break;
-
-      //26の時の処理
-      case 26:
-        $("#result span").text("26でした！")
-        break;
-
-      //27の時の処理
-      case 27:
-        $("#result span").text("27でした！")
-        break;
-
-      //28の時の処理
-      case 28:
-        $("#result span").text("28でした！")
-        break;
-
-      //29の時の処理 
-      case 29:
-        $("#result span").text("29でした！")
+      //8の時の処理
+      case 21:
+        $("#result span").text("赤の8でした！")
         break;
 
       //30の時の処理
-      case 30:
-        $("#result span").text("30でした！")
+      case 22:
+        $("#result span").text("黒の30でした！")
         break;
-      //31の時の処理
+
+      //11の時の処理
+      case 23:
+        $("#result span").text("赤の11でした！")
+        break;
+
+      //36の時の処理 
+      case 24:
+        $("#result span").text("黒の36でした！")
+        break;
+
+      //13の時の処理
+      case 25:
+        $("#result span").text("赤の13でした！")
+        break;
+
+      //27の時の処理
+      case 26:
+        $("#result span").text("黒の27でした！")
+        break;
+
+      //6の時の処理
+      case 27:
+        $("#result span").text("赤の6でした！")
+        break;
+
+      //34の時の処理
+      case 28:
+        $("#result span").text("黒の34でした！")
+        break;
+
+      //17の時の処理 
+      case 29:
+        $("#result span").text("赤の17でした！")
+        break;
+
+      //25の時の処理
+      case 30:
+        $("#result span").text("黒の25でした！")
+        break;
+      //2の時の処理
       case 31:
-        $("#result span").text("31でした！")
+        $("#result span").text("赤の2でした！")
+        break;
+
+      //21の時の処理
+      case 32:
+        $("#result span").text("黒の21でした！")
+        break;
+
+      //4の時の処理
+      case 33:
+        $("#result span").text("赤の4でした！")
+        break;
+
+      //19の時の処理 
+      case 34:
+        $("#result span").text("黒の19でした！")
+        break;
+
+      //15の時の処理
+      case 35:
+        $("#result span").text("赤の15でした！")
         break;
 
       //32の時の処理
-      case 32:
-        $("#result span").text("32でした！")
-        break;
-
-      //33の時の処理
-      case 33:
-        $("#result span").text("33でした！")
-        break;
-
-      //34の時の処理 
-      case 34:
-        $("#result span").text("34でした！")
-        break;
-
-      //35の時の処理
-      case 35:
-        $("#result span").text("35でした！")
-        break;
-
-      //36の時の処理
       case 36:
-        $("#result span").text("36でした！")
+        $("#result span").text("黒の32でした！")
+        break;
+
+      //0の時の処理
+      case 37:
+        $("#result span").text("0でした！")
         break;
 
     };
