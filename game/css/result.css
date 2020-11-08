@@ -2,6 +2,10 @@
   margin: 10px auto;/*ちょっと下に下げる*/
 }
 
+header{
+  text-align: right;
+}
+
 h1{
   text-align: center;
 }
