@@ -55,6 +55,10 @@ $id = $_SESSION['id'];
       </p>
     </div>
 
+    <input type="button" class="btn btn-primary" onclick="location.href='https://webapp.massyu.net/game/select.php'" value="もう一度遊ぶ">
+
+    <input type="button" class="btn btn-primary" onclick="location.href='https://webapp.massyu.net/game/board.php'" value="みんなの結果を見る">
+
   </div>
 </body>
 
