@@ -9,14 +9,6 @@ const input_add = (money, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
     document.getElementById("run").disabled = true;
   }
 
-  $.ajax({
-    type: 'POST',
-    url: 'https://webapp.massyu.net/game/php/sub-db.php',
-    data: total,
-    success: function(data) {
-        alert(data);
-    }
-});
 
   return (total);
 }
