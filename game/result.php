@@ -7,8 +7,13 @@ require('php/db-info.php');
 // SESSIONから名前を取得
 $login_name = $_SESSION['name'];
 
-// SESSIONのIDを代入
-$id = $_SESSION['id'];
+if (isset($_SESSION['id'])) {//ログインしているとき
+  $print_name = htmlspecialchars($login_name, \ENT_QUOTES, 'UTF-8');
+
+} else {//ログインしていない時
+  $alert = "<script type='text/javascript'>alert('ログインしていません。ログインしてください');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
+  echo $alert;
+}
 
 ?>
 
@@ -35,6 +40,7 @@ $id = $_SESSION['id'];
 <body>
   <div class="container">
     <header>
+      <p><?php echo $login_name; ?>さん</p>
       <input type="button" value="ログアウト" class="btn btn-secondary" onclick="location.href='https://webapp.massyu.net/game/php/logout.php'">
     </header>
     <h1>何が出るかな</h1>
