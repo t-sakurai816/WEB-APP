@@ -20,6 +20,9 @@
 
 <body>
   <div class="container">
+    <header>
+      <input type="button" value="ログアウト" class="btn btn-secondary" onclick="<?php include('php/logout.php');?>">
+    </header>
     <h1>何が出るかな</h1>
     <!-- 針の画像 -->
     <div id="hari">
@@ -33,7 +36,9 @@
 
     <!-- 結果の表示 -->
     <div id="result">
-      <p><h2><span>hoge</span></h2></p>
+      <p>
+      <h2><span>hoge</span></h2>
+      </p>
     </div>
 
   </div>
