@@ -68,6 +68,9 @@ if (isset($_SESSION['id'])) {//ログインしているとき
 
 <body>
   <div class="container">
+    <header>
+      <input type="button" value="ログアウト" class="btn btn-secondary" onclick="location.href='https://webapp.massyu.net/game/php/logout.php'">
+    </header>
     <h1>ルーレットゲーム</h1>
     <div class="row">
       <div class="col-sm-12" id="money">
