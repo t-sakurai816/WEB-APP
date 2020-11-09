@@ -13,11 +13,11 @@ function Subtraction($bet_money, $id){//DBからgoldの値を引くプログラ�
   try {
     $dbh = new PDO($dsn, $username, $password);
     // echo "接続成功";
-    $sql = "UPDATE roulette SET gold = gold - :bet_money WHERE id = :id";
-    $stmt = $dbh->prepare($sql);
-    $stmt->bindValue(':money', $bet_money, PDO::PARAM_INT);
-    $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-    $stmt->execute();
+    // $sql = "UPDATE roulette SET gold = gold - :bet_money WHERE id = :id";
+    // $stmt = $dbh->prepare($sql);
+    // $stmt->bindValue(':money', $bet_money, PDO::PARAM_INT);
+    // $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+    // $stmt->execute();
 
   } catch (PDOException $e) {
     // エラーのときエラーメッセージ
