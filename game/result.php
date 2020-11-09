@@ -170,9 +170,7 @@ if (isset($_SESSION['id'])) {//ログインしているとき
     </div>
 
     <div class="button">
-      <input type="button" class="btn btn-primary" onclick="location.href='https://webapp.massyu.net/game/select.php'" value="もう一度遊ぶ">
-
-      <input type="button" class="btn btn-success" onclick="location.href='https://webapp.massyu.net/game/board.php'" value="みんなの結果を見る">
+      <input type="button" class="btn btn-primary" onclick="location.href='https://webapp.massyu.net/game/user_result.php'" value="結果を見る">
     </div>
   </div>
 </body>
