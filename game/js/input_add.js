@@ -9,7 +9,7 @@ const input_add = (money, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, 
     document.getElementById("run").disabled = true;
   }
 
-    document.getElementById("result").value=total;
+    document.getElementById("result-hidden").value=total;
 
   return (total);
 }
