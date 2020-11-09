@@ -2,10 +2,10 @@
 session_start();
 
 // DB情報（elastic beanstalkの環境変数から読み込む）
-require('php/db-info.php');
+require_once('php/db-info.php');
 
 //MySQLからBETされた枚数を引く
-require('php/sub-db.php');
+require_once('php/sub-db.php');
 
 
 
