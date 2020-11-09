@@ -825,9 +825,7 @@ if (isset($_SESSION['id'])) {//ログインしているとき
       <p>
         <h2><span>hoge</span></h2>
       </p>
-      <p>
-        <h2 id="plus_money">money</h2>
-      </p>
+      <p id="plus_money">money</p>
     </div>
 
     <form action="./user_result.php" >
