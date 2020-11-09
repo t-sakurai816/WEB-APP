@@ -4,30 +4,7 @@ session_start();
 // DB情報（elastic beanstalkの環境変数から読み込む）
 require_once('php/db-info.php');
 
-//function Subtraction($bet_money, $id){//DBからgoldの値を引くプログラム
 
-  // DB情報（elastic beanstalkの環境変数から読み込む）
-  // require_once('../php/db-config.php');
-  
-
-try {
-  $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
-  $dbh = new PDO($dsn, $username, $password);
-  echo $dsn;//デバッグ用
-  echo "接続成功";
-  $sql = "UPDATE roulette SET gold = gold - :bet_money WHERE id = :id";
-  echo $sql;
-  $stmt = $dbh->prepare($sql);
-  $stmt->bindValue(':bet_money', $bet_money, PDO::PARAM_INT);
-  $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-  $stmt->execute();
-
-} catch (PDOException $e) {
-  // エラーのときエラーメッセージ
-  $msg = $e->getMessage();
-  alert('$msg');
-  }
-//}
 
 
 // SESSIONから名前を取得
@@ -44,6 +21,32 @@ if(is_numeric($bet_money)){
 }else{
   echo 'その他です';
 }
+
+
+//function Subtraction($bet_money, $id){//DBからgoldの値を引くプログラム
+
+  // DB情報（elastic beanstalkの環境変数から読み込む）
+  // require_once('../php/db-config.php');
+  
+
+  try {
+    $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
+    $dbh = new PDO($dsn, $username, $password);
+    echo $dsn;//デバッグ用
+    echo "接続成功";
+    $sql = "UPDATE roulette SET gold = gold - :bet_money WHERE id = :id";
+    echo $sql;
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindValue(':bet_money', $bet_money, PDO::PARAM_INT);
+    $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+  
+  } catch (PDOException $e) {
+    // エラーのときエラーメッセージ
+    $msg = $e->getMessage();
+    alert('$msg');
+    }
+  //}
 
 // フォームから受け取ったデータ
 $array = array();//初期化
