@@ -29,6 +29,15 @@ try {
   $stmt->bindValue(':id', $login_id, PDO::PARAM_INT);
   $stmt->execute();
 
+  DBから取得
+  $sql = "select gold from roulette where id=" . $id;
+  $stmt = $dbh->prepare($sql);
+  $stmt->execute();
+  $result = $stmt->fetch();
+  $money = $result['gold'];
+  $result = $stmt->fetch();
+  $money = $result['gold'];
+
 } catch (PDOException $e) {
   // エラーのときエラーメッセージ
   $msg = $e->getMessage();
@@ -54,7 +63,7 @@ try {
 <body>
   <div class="container">
     <h1>↓↓↓Your Money↓↓↓</h1>
-    <h1>hogehoge</h1>
+    <h1><?php echo $money ?></h1>
     <!--ここにユーザーのコインの所持枚数を表示-->
     <div class="button">
       <input type="button" class="btn btn-primary" onclick="location.href='https://webapp.massyu.net/game/select.php'"

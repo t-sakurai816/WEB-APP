@@ -829,12 +829,10 @@ if (isset($_SESSION['id'])) {//ログインしているとき
     </div>
 
     <form action="./user_result.php" >
-      <input type="hidden" id="hidden_plus_money" name="result_money">
+      <input type="text" id="hidden_plus_money" name="result_money">
+      <bttton type="submit" class="btn btn-primary">結果を見る！</button>
     </form>
 
-    <div class="button">
-      <input type="button" class="btn btn-primary" onclick="location.href='https://webapp.massyu.net/game/user_result.php'" value="結果を見る">
-    </div>
   </div>
 </body>
 
