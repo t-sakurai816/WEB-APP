@@ -10,9 +10,10 @@ fetch('https://webapp.massyu.net/php/test.php', {
   body: JSON.stringify(data),
 })
 .then(response => response.json())
-.then(data => {
+.then(json => {
   console.log('Success:', data);
+  console.log('Success!!!:', json);
 })
 .catch((error) => {
-  console.error('Error:', error);
+  console.error('Error.....:', error);
 });
