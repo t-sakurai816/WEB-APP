@@ -18,6 +18,8 @@ h2{
 #hari img{/*画像の中央寄せ*/
   display: block;
   margin:auto;
+  height:40px;
+  width:auto;
 }
 
 #roulette img{/*画像の中央寄せ*/

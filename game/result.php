@@ -812,7 +812,7 @@ if (isset($_SESSION['id'])) {//ログインしているとき
     <h1>何が出るかな</h1>
     <!-- 針の画像 -->
     <div id="hari">
-      <img src="https://magnets.jp/demo/inagaki20141107/img/hari.png" alt="はり">
+      <img src="https://webapp.massyu.net/img/hari.svg" alt="はり">
     </div>
 
     <!-- ルーレットの画像 -->
