@@ -4,11 +4,19 @@ session_start();
 // DB情報（elastic beanstalkの環境変数から読み込む）
 require('php/db-info.php');
 
+//MySQLからBETされた枚数を引く
+require('php/sub-db.php');
+
+
+
 // SESSIONから名前を取得
 $login_name = $_SESSION['name'];
 
 // SESSIONのIDを代入
 $id = $_SESSION['id'];
+
+$bet_money = $_POST['result_num'];
+Subtraction($bet_money, $id);
 
 // フォームから受け取ったデータ
 $array = array();//初期化
