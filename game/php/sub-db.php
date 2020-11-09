@@ -1,5 +1,5 @@
 <?php
-function Subtraction($bet_money, $id){//DBからgoldの値を引くプログラム
+function Subtraction($money, $id){//DBからgoldの値を引くプログラム
 
   // DB情報（elastic beanstalkの環境変数から読み込む）
   require_once('../php/db-config.php');
