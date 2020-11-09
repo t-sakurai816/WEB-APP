@@ -10,7 +10,7 @@ $(() => {
   //ルーレットの角度の変数。停止位置の値を初期値に設定する
   let angle = stopAngle;
 
-  //ルーレットの分割数から1エリア分の角度を求める。今回は5分割なので72が入ってます
+  //ルーレットの分割数から1エリア分の角度を求める。
   const section = 360 / divide;
 
   //停止位置がどのエリアにあるか調べ、該当する番号をstopNumberに格納
@@ -63,6 +63,14 @@ $(() => {
       //26の時の処理
       case 1:
         $("#result span").text("赤の26でした！")
+        const num = <?php echo array[number_26];?> * 36;
+        const color = <?php echo array[number_red];?> * 2;
+        const st = <?php echo array[number_3st12];?> * 3;
+        const hiLow = <?php echo array[number_19_36];?> * 2;
+        const oddEven = <?php echo array[number_even];?> * 2;
+
+        console.log(num + color + st + hiLow + oddEven);
+
         break;
 
       //3の時の処理
