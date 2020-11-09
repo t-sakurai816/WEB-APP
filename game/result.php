@@ -206,11 +206,11 @@ const result = () => {
     //26の時の処理
     case 1:
       $("#result span").text("赤の26でした！")
-      const num = <?php echo $array[number_26];?> * 36;
-      const color = <?php echo $array[number_red];?> * 2;
-      const st = <?php echo $array[number_3st12];?> * 3;
-      const hiLow = <?php echo $array[number_19_36];?> * 2;
-      const oddEven = <?php echo $array[number_even];?> * 2;
+      var num = <?php echo $array[number_26];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_3st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -219,11 +219,11 @@ const result = () => {
     //3の時の処理
     case 2:
       $("#result span").text("黒の3でした！")
-      const num = <?php echo $array[number_3];?> * 36;
-      const color = <?php echo $array[number_black];?> * 2;
-      const st = <?php echo $array[number_1st12];?> * 3;
-      const hiLow = <?php echo $array[number_1_18];?> * 2;
-      const oddEven = <?php echo $array[number_odd];?> * 2;
+      var num = <?php echo $array[number_3];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_1st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -232,11 +232,11 @@ const result = () => {
     //35の時の処理
     case 3:
       $("#result span").text("赤の35でした！")
-      const num = <?php echo $array[number_35];?> * 36;
-      const color = <?php echo $array[number_red];?> * 2;
-      const st = <?php echo $array[number_3st12];?> * 3;
-      const hiLow = <?php echo $array[number_19_36];?> * 2;
-      const oddEven = <?php echo $array[number_odd];?> * 2;
+      var num = <?php echo $array[number_35];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_3st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -245,11 +245,11 @@ const result = () => {
     //12の時の処理 
     case 4:
       $("#result span").text("黒の12でした！")
-      const num = <?php echo $array[number_12];?> * 36;
-      const color = <?php echo $array[number_black];?> * 2;
-      const st = <?php echo $array[number_1st12];?> * 3;
-      const hiLow = <?php echo $array[number_1_18];?> * 2;
-      const oddEven = <?php echo $array[number_even];?> * 2;
+      var num = <?php echo $array[number_12];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_1st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -258,11 +258,11 @@ const result = () => {
     //28の時の処理
     case 5:
       $("#result span").text("赤の28でした！")
-      const num = <?php echo $array[number_28];?> * 36;
-      const color = <?php echo $array[number_red];?> * 2;
-      const st = <?php echo $array[number_3st12];?> * 3;
-      const hiLow = <?php echo $array[number_19_36];?> * 2;
-      const oddEven = <?php echo $array[number_even];?> * 2;
+      var num = <?php echo $array[number_28];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_3st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
       break;
@@ -270,11 +270,11 @@ const result = () => {
     //7の時の処理
     case 6:
       $("#result span").text("黒の7でした！")
-      const num = <?php echo $array[number_7];?> * 36;
-      const color = <?php echo $array[number_black];?> * 2;
-      const st = <?php echo $array[number_1st12];?> * 3;
-      const hiLow = <?php echo $array[number_1_18];?> * 2;
-      const oddEven = <?php echo $array[number_odd];?> * 2;
+      var num = <?php echo $array[number_7];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_1st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -283,11 +283,11 @@ const result = () => {
     //29の時の処理
     case 7:
       $("#result span").text("赤の29でした！")
-      const num = <?php echo $array[number_29];?> * 36;
-      const color = <?php echo $array[number_red];?> * 2;
-      const st = <?php echo $array[number_3st12];?> * 3;
-      const hiLow = <?php echo $array[number_19_36];?> * 2;
-      const oddEven = <?php echo $array[number_odd];?> * 2;
+      var num = <?php echo $array[number_29];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_3st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -296,11 +296,11 @@ const result = () => {
     //18の時の処理
     case 8:
       $("#result span").text("黒の18でした！")
-      const num = <?php echo $array[number_18];?> * 36;
-      const color = <?php echo $array[number_black];?> * 2;
-      const st = <?php echo $array[number_2st12];?> * 3;
-      const hiLow = <?php echo $array[number_1_18];?> * 2;
-      const oddEven = <?php echo $array[number_even];?> * 2;
+      var num = <?php echo $array[number_18];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_2st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -309,11 +309,11 @@ const result = () => {
     //22の時の処理 
     case 9:
       $("#result span").text("赤の22でした！")
-      const num = <?php echo $array[number_22];?> * 36;
-      const color = <?php echo $array[number_red];?> * 2;
-      const st = <?php echo $array[number_2st12];?> * 3;
-      const hiLow = <?php echo $array[number_19_36];?> * 2;
-      const oddEven = <?php echo $array[number_even];?> * 2;
+      var num = <?php echo $array[number_22];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_2st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -322,11 +322,11 @@ const result = () => {
     //9の時の処理
     case 10:
       $("#result span").text("黒の9でした！")
-      const num = <?php echo $array[number_9];?> * 36;
-      const color = <?php echo $array[number_black];?> * 2;
-      const st = <?php echo $array[number_1st12];?> * 3;
-      const hiLow = <?php echo $array[number_1_18];?> * 2;
-      const oddEven = <?php echo $array[number_odd];?> * 2;
+      var num = <?php echo $array[number_9];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_1st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -334,11 +334,11 @@ const result = () => {
     //31の時の処理
     case 11:
       $("#result span").text("赤31でした！")
-      const num = <?php echo $array[number_31];?> * 36;
-      const color = <?php echo $array[number_red];?> * 2;
-      const st = <?php echo $array[number_3st12];?> * 3;
-      const hiLow = <?php echo $array[number_19_36];?> * 2;
-      const oddEven = <?php echo $array[number_odd];?> * 2;
+      var num = <?php echo $array[number_31];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_3st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
 
@@ -347,11 +347,11 @@ const result = () => {
     //14の時の処理
     case 12:
       $("#result span").text("黒の14でした！")
-      const num = <?php echo $array[number_14];?> * 36;
-      const color = <?php echo $array[number_black];?> * 2;
-      const st = <?php echo $array[number_2st12];?> * 3;
-      const hiLow = <?php echo $array[number_1_18];?> * 2;
-      const oddEven = <?php echo $array[number_even];?> * 2;
+      var num = <?php echo $array[number_14];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_2st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
 
       console.log(num + color + st + hiLow + oddEven);
       break;
@@ -359,21 +359,50 @@ const result = () => {
     //20の時の処理
     case 13:
       $("#result span").text("赤の20でした！")
+      var num = <?php echo $array[number_20];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_2st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
+
+      console.log(num + color + st + hiLow + oddEven);
       break;
 
     //1の時の処理 
     case 14:
       $("#result span").text("黒の1でした！")
+      var num = <?php echo $array[number_1];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_1st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
+
+      console.log(num + color + st + hiLow + oddEven);
+
       break;
 
     //33の時の処理
     case 15:
       $("#result span").text("赤の33でした！")
+      var num = <?php echo $array[number_33];?> * 36;
+      var color = <?php echo $array[number_red];?> * 2;
+      var st = <?php echo $array[number_3st12];?> * 3;
+      var hiLow = <?php echo $array[number_19_36];?> * 2;
+      var oddEven = <?php echo $array[number_odd];?> * 2;
+
+      console.log(num + color + st + hiLow + oddEven);
       break;
 
     //16の時の処理
     case 16:
       $("#result span").text("黒の16でした！")
+      var num = <?php echo $array[number_16];?> * 36;
+      var color = <?php echo $array[number_black];?> * 2;
+      var st = <?php echo $array[number_2st12];?> * 3;
+      var hiLow = <?php echo $array[number_1_18];?> * 2;
+      var oddEven = <?php echo $array[number_even];?> * 2;
+
+      console.log(num + color + st + hiLow + oddEven);
       break;
 
     //24の時の処理
