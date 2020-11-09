@@ -332,17 +332,17 @@ const result = () => {
 
       break;
     //31の時の処理
-    case 11:
-      $("#result span").text("赤31でした！")
-      var num = <?php echo $array[number_31];?> * 36;
-      var color = <?php echo $array[number_red];?> * 2;
-      var st = <?php echo $array[number_3st12];?> * 3;
-      var hiLow = <?php echo $array[number_19_36];?> * 2;
-      var oddEven = <?php echo $array[number_odd];?> * 2;
+    // case 11:
+    //   $("#result span").text("赤31でした！")
+    //   var num = <?php echo $array[number_31];?> * 36;
+    //   var color = <?php echo $array[number_red];?> * 2;
+    //   var st = <?php echo $array[number_3st12];?> * 3;
+    //   var hiLow = <?php echo $array[number_19_36];?> * 2;
+    //   var oddEven = <?php echo $array[number_odd];?> * 2;
 
-      console.log(num + color + st + hiLow + oddEven);
+    //   console.log(num + color + st + hiLow + oddEven);
 
-      break;
+    //   break;
 
     //14の時の処理
     case 12:
@@ -682,6 +682,13 @@ const result = () => {
       <h2><span>hoge</span></h2>
       </p>
     </div>
+
+    <form action="./user_result.php" >
+      <input type="hidden" id="hidden_plus_money">
+      <p>
+        <h2 id="plus_money"></h2>
+      </p>
+    </form>
 
     <div class="button">
       <input type="button" class="btn btn-primary" onclick="location.href='https://webapp.massyu.net/game/user_result.php'" value="結果を見る">
