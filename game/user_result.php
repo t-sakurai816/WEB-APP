@@ -29,9 +29,10 @@ try {
   $stmt->bindValue(':id', $login_id, PDO::PARAM_INT);
   $stmt->execute();
 
-  DBから取得
-  $sql = "select gold from roulette where id=" . $id;
+  //DBから取得
+  $sql = "select gold from roulette where id= :id";
   $stmt = $dbh->prepare($sql);
+  $stmt->bindValue(':id', $login_id, PDO::PARAM_INT);
   $stmt->execute();
   $result = $stmt->fetch();
   $money = $result['gold'];
