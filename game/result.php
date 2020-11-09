@@ -36,7 +36,14 @@ $login_id = $_SESSION['id'];
 
 $bet_money = $_POST['result_num'];
 echo $bet_money;
-Subtraction($bet_money, $login_id);
+
+if(is_numeric($bet_money)){
+  echo 'intです';
+}else{
+  echo 'その他です';
+}
+
+Subtraction(intval($bet_money), $login_id);
 
 // フォームから受け取ったデータ
 $array = array();//初期化
