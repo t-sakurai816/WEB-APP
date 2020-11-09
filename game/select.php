@@ -1098,7 +1098,7 @@ if (isset($_SESSION['id'])) {//ログインしているとき
       <div class="result">
         <p>BET枚数：<output name="result"></output></p>
       </div>
-      <input type="hidden" id="result-hidden">
+      <input type="hidden" id="result-hidden" name="result_num">
       <button type="submit" class="btn btn-primary" id="run" disabled="disabled">ルーレットをまわす！</button>
       
     </form>
