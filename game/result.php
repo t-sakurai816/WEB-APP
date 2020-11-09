@@ -823,15 +823,15 @@ if (isset($_SESSION['id'])) {//ログインしているとき
     <!-- 結果の表示 -->
     <div id="result">
       <p>
-      <h2><span>hoge</span></h2>
+        <h2><span>hoge</span></h2>
+      </p>
+      <p>
+        <h2 id="plus_money">money</h2>
       </p>
     </div>
 
     <form action="./user_result.php" >
-      <input type="hidden" id="hidden_plus_money">
-      <p>
-        <h2 id="plus_money"></h2>
-      </p>
+      <input type="hidden" id="hidden_plus_money" name="result_money">
     </form>
 
     <div class="button">

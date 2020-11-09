@@ -21,7 +21,7 @@ try {
   $dbh = new PDO($dsn, $username, $password);
   // echo $dsn;//デバッグ用
   // echo "接続成功";
-  $sql = "UPDATE roulette SET gold = gold - :result_money WHERE id = :id";
+  $sql = "UPDATE roulette SET gold = gold + :result_money WHERE id = :id";
   // echo $sql;
   // echo $login_id;
   $stmt = $dbh->prepare($sql);
