@@ -96,7 +96,7 @@ $array = array(//フォームから受けとったデータを配列に代入
   'number_19_36' => $_POST['number_19_36']
 );
 
-print_r($array);//デバッグ用
+// print_r($array);//デバッグ用
 
 try {
   $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
@@ -823,9 +823,9 @@ if (isset($_SESSION['id'])) {//ログインしているとき
     <!-- 結果の表示 -->
     <div id="result">
       <p>
-        <h2><span>hoge</span></h2>
+        <h2><span>何が出るかなー</span></h2>
       </p>
-      <p id="plus_money">money</p>
+      <!-- <p id="plus_money">money</p> -->
     </div>
 
     <form action="https://webapp.massyu.net/game/user_result.php" method="post">
