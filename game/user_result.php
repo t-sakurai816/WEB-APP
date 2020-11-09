@@ -29,6 +29,7 @@ try {
   $stmt->bindValue(':id', $login_id, PDO::PARAM_INT);
   $stmt->execute();
 
+  $dbh = new PDO($dsn, $username, $password);
   //DBから取得
   $sql = "select gold from roulette where id= :id";
   $stmt = $dbh->prepare($sql);
