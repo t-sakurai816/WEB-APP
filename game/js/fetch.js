@@ -1,4 +1,4 @@
-const data = { username: 'example' };
+const data = { username: example };
 
 fetch('https://webapp.massyu.net/php/test.php', {
   method: 'POST', // or 'PUT'
