@@ -34,8 +34,8 @@ $login_name = $_SESSION['name'];
 // SESSIONのIDを代入
 $id = $_SESSION['id'];
 
-$bet_money = $_POST['result_num'];
-Subtraction($bet_money, $id);
+// $bet_money = $_POST['result_num'];
+// Subtraction($bet_money, $id);
 
 // フォームから受け取ったデータ
 $array = array();//初期化
