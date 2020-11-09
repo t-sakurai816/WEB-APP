@@ -14,13 +14,9 @@ $login_name = $_SESSION['name'];
 $login_id = $_SESSION['id'];
 
 $bet_money = $_POST['result_num'];
-echo $bet_money;
 
-if(is_numeric($bet_money)){
-  echo 'intです';
-}else{
-  echo 'その他です';
-}
+
+
 
 
 //function Subtraction($bet_money, $id){//DBからgoldの値を引くプログラム
