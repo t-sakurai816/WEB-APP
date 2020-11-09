@@ -5,6 +5,7 @@ fetch('https://webapp.massyu.net/php/test.php', {
   mode: 'cors',
   headers: {
     'Content-Type': 'application/json',
+    'Accept': 'application/json'
   },
   body: JSON.stringify(data),
 })
