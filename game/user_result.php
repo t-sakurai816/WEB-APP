@@ -4,9 +4,6 @@ session_start();
 // DB情報（elastic beanstalkの環境変数から読み込む）
 require_once('php/db-info.php');
 
-
-
-
 // SESSIONから名前を取得
 $login_name = $_SESSION['name'];
 
