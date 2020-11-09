@@ -32,11 +32,11 @@ function Subtraction($bet_money, $id){//DBからgoldの値を引くプログラ�
 $login_name = $_SESSION['name'];
 
 // SESSIONのIDを代入
-$id = $_SESSION['id'];
+$login_id = $_SESSION['id'];
 
 $bet_money = $_POST['result_num'];
 echo $bet_money;
-// Subtraction($bet_money, $id);
+Subtraction($bet_money, $login_id);
 
 // フォームから受け取ったデータ
 $array = array();//初期化
