@@ -36,8 +36,7 @@ try {
   $stmt->execute();
   $result = $stmt->fetch();
   $money = $result['gold'];
-  $result = $stmt->fetch();
-  $money = $result['gold'];
+
 
 } catch (PDOException $e) {
   // エラーのときエラーメッセージ
