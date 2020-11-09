@@ -20,6 +20,7 @@ $(() => {
     }
   };
 
+  console.log(stopNumber);
 
   //クルクル処理。5ミリ秒毎にspeedの数値分画像が回転します。
   const rotation = setInterval(function () {
