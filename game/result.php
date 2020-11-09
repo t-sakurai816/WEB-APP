@@ -29,24 +29,25 @@ if(is_numeric($bet_money)){
   // require_once('../php/db-config.php');
   
 
-  try {
-    $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
-    $dbh = new PDO($dsn, $username, $password);
-    echo $dsn;//デバッグ用
-    echo "接続成功";
-    $sql = "UPDATE roulette SET gold = gold - :bet_money WHERE id = :id";
-    echo $sql;
-    $stmt = $dbh->prepare($sql);
-    $stmt->bindValue(':bet_money', $bet_money, PDO::PARAM_INT);
-    $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-    $stmt->execute();
-  
-  } catch (PDOException $e) {
-    // エラーのときエラーメッセージ
-    $msg = $e->getMessage();
-    alert('$msg');
-    }
-  //}
+try {
+  $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
+  $dbh = new PDO($dsn, $username, $password);
+  echo $dsn;//デバッグ用
+  echo "接続成功";
+  $sql = "UPDATE roulette SET gold = gold - :bet_money WHERE id = :id";
+  echo $sql;
+  echo $login_id;
+  $stmt = $dbh->prepare($sql);
+  $stmt->bindValue(':bet_money', $bet_money, PDO::PARAM_INT);
+  $stmt->bindValue(':id', $login_id, PDO::PARAM_INT);
+  $stmt->execute();
+
+} catch (PDOException $e) {
+  // エラーのときエラーメッセージ
+  $msg = $e->getMessage();
+  alert('$msg');
+  }
+//}
 
 // フォームから受け取ったデータ
 $array = array();//初期化
