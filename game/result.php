@@ -212,7 +212,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -225,7 +229,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -238,7 +246,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -251,7 +263,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -264,7 +280,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //7の時の処理
@@ -276,7 +296,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -289,7 +313,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -302,7 +330,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -315,7 +347,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -328,7 +364,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
         //31の時の処理
@@ -340,7 +380,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -353,7 +397,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //20の時の処理
@@ -365,7 +413,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //1の時の処理 
@@ -377,7 +429,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
 
           break;
 
@@ -390,7 +446,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //16の時の処理
@@ -402,7 +462,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //24の時の処理
@@ -414,7 +478,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //5の時の処理
@@ -426,7 +494,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //10の時の処理 
@@ -438,7 +510,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //23の時の処理
@@ -450,7 +526,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //8の時の処理
@@ -462,7 +542,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //30の時の処理
@@ -474,7 +558,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //11の時の処理
@@ -486,7 +574,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //36の時の処理 
@@ -498,7 +590,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //13の時の処理
@@ -510,7 +606,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //27の時の処理
@@ -522,7 +622,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //6の時の処理
@@ -534,7 +638,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //34の時の処理
@@ -546,7 +654,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //17の時の処理 
@@ -558,7 +670,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //25の時の処理
@@ -570,7 +686,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
         //2の時の処理
         case 31:
@@ -581,7 +701,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //21の時の処理
@@ -593,7 +717,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //4の時の処理
@@ -605,7 +733,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //19の時の処理 
@@ -617,7 +749,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //15の時の処理
@@ -629,7 +765,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //32の時の処理
@@ -641,7 +781,11 @@ if (isset($_SESSION['id'])) {//ログインしているとき
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
 
-          console.log(num + color + st + hiLow + oddEven);
+          var total = num + color + st + hiLow + oddEven;
+
+          console.log(total);
+          document.getElementById("hidden_plus_money").value=total;
+          document.getElementById("plus_money").value=total;
           break;
 
         //0の時の処理
