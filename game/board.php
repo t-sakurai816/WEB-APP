@@ -43,7 +43,7 @@ try {
 <body>
   <div class="container">
     <header>
-      <input type="button" value="ログアウト" class="btn btn-secondary" onclick="location.href='https://webapp.massyu.net/game/php/logout.php'">
+      <input type="button" value="トップに戻る" class="btn btn-secondary" onclick="location.href='https://webapp.massyu.net/game/php/logout.php'">
     </header>
     <h1>ランキング</h1>
     <h2>TOP10を表示しています</h2>
