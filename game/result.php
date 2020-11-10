@@ -16,8 +16,13 @@ $login_id = $_SESSION['id'];
 $bet_money = $_POST['result_num'];
 
 
-
-
+if (isset($_SESSION['id'])) {//ログインしているとき
+  $print_name = htmlspecialchars($login_name, \ENT_QUOTES, 'UTF-8');
+  $print_money = htmlspecialchars($money, \ENT_QUOTES, 'UTF-8');
+} else {//ログインしていない時
+  $alert = "<script type='text/javascript'>alert('ログインしていません。ログインしてください');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
+  echo $alert;
+}
 
 //function Subtraction($bet_money, $id){//DBからgoldの値を引くプログラム
 
@@ -115,13 +120,7 @@ try {
   echo $alert;
 }
 
-if (isset($_SESSION['id'])) {//ログインしているとき
-  $print_name = htmlspecialchars($login_name, \ENT_QUOTES, 'UTF-8');
-  $print_money = htmlspecialchars($money, \ENT_QUOTES, 'UTF-8');
-} else {//ログインしていない時
-  $alert = "<script type='text/javascript'>alert('ログインしていません。ログインしてください');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
-  echo $alert;
-}
+
 
 ?>
 
