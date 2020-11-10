@@ -67,6 +67,10 @@ try {
 
 <body>
   <div class="container">
+    <header>
+      <p><?php echo $login_name; ?>さん</p>
+      <input type="button" value="ログアウト" class="btn btn-secondary" onclick="location.href='https://webapp.massyu.net/game/php/logout.php'">
+    </header>
     <h1>↓↓↓<?php echo $printname?>'s Money↓↓↓</h1>
     <h1><?php echo $money ?></h1>
     <!--ここにユーザーのコインの所持枚数を表示-->
