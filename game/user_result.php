@@ -12,6 +12,13 @@ $login_id = $_SESSION['id'];
 
 $result_money = $_POST['result_money'];
 
+if (isset($_SESSION['id'])) {//ログインしているとき
+  $print_name = htmlspecialchars($login_name, \ENT_QUOTES, 'UTF-8');
+} else {//ログインしていない時
+  $alert = "<script type='text/javascript'>alert('ログインしていません。ログインしてください');location.href = 'https://webapp.massyu.net/game/index.html'</script>";
+  echo $alert;
+}
+
 // DBに値を足す
 try {
   $dsn = "mysql:host=$host; dbname=$dbname; charset=utf8";
@@ -60,7 +67,7 @@ try {
 
 <body>
   <div class="container">
-    <h1>↓↓↓Your Money↓↓↓</h1>
+    <h1>↓↓↓<?php echo $printname?>'s Money↓↓↓</h1>
     <h1><?php echo $money ?></h1>
     <!--ここにユーザーのコインの所持枚数を表示-->
     <div class="button">
