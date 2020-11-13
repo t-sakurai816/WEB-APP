@@ -206,7 +206,7 @@ try {
         case 1:
           $("#result span").text("黒の26でした！")
           var num = <?php echo $array[number_26];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
