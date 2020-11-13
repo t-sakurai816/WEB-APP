@@ -827,9 +827,9 @@ try {
       <!-- <p id="plus_money">money</p> -->
     </div>
 
-    <form action="https://webapp.massyu.net/game/user_result.php" method="post">
+    <form action="https://webapp.massyu.net/game/user_result.php" method="post" class="center">
       <input type="hidden" id="hidden_plus_money" name="result_money">
-      <input type="submit" id="center" class="btn btn-primary" value="結果を見る！">
+      <input type="submit" class="btn btn-primary" value="結果を見る！">
     </form>
 
   </div>
