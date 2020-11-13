@@ -240,7 +240,7 @@ try {
         case 3:
           $("#result span").text("黒の35でした！")
           var num = <?php echo $array[number_35];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -257,7 +257,7 @@ try {
         case 4:
           $("#result span").text("赤のの12でした！")
           var num = <?php echo $array[number_12];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -274,7 +274,7 @@ try {
         case 5:
           $("#result span").text("黒の28でした！")
           var num = <?php echo $array[number_28];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -290,7 +290,7 @@ try {
         case 6:
           $("#result span").text("赤の7でした！")
           var num = <?php echo $array[number_7];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -307,7 +307,7 @@ try {
         case 7:
           $("#result span").text("黒の29でした！")
           var num = <?php echo $array[number_29];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -324,7 +324,7 @@ try {
         case 8:
           $("#result span").text("赤の18でした！")
           var num = <?php echo $array[number_18];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -341,7 +341,7 @@ try {
         case 9:
           $("#result span").text("黒の22でした！")
           var num = <?php echo $array[number_22];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -358,7 +358,7 @@ try {
         case 10:
           $("#result span").text("赤の9でした！")
           var num = <?php echo $array[number_9];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -391,7 +391,7 @@ try {
         case 12:
           $("#result span").text("赤の14でした！")
           var num = <?php echo $array[number_14];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -407,7 +407,7 @@ try {
         case 13:
           $("#result span").text("黒の20でした！")
           var num = <?php echo $array[number_20];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -423,7 +423,7 @@ try {
         case 14:
           $("#result span").text("赤の1でした！")
           var num = <?php echo $array[number_1];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -440,7 +440,7 @@ try {
         case 15:
           $("#result span").text("黒の33でした！")
           var num = <?php echo $array[number_33];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -456,7 +456,7 @@ try {
         case 16:
           $("#result span").text("赤の16でした！")
           var num = <?php echo $array[number_16];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -472,7 +472,7 @@ try {
         case 17:
           $("#result span").text("黒の24でした！")
           var num = <?php echo $array[number_24];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -488,7 +488,7 @@ try {
         case 18:
           $("#result span").text("赤の5でした！")
           var num = <?php echo $array[number_5];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -504,7 +504,7 @@ try {
         case 19:
           $("#result span").text("黒の10でした！")
           var num = <?php echo $array[number_10];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -520,7 +520,7 @@ try {
         case 20:
           $("#result span").text("赤の23でした！")
           var num = <?php echo $array[number_23];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -536,7 +536,7 @@ try {
         case 21:
           $("#result span").text("黒の8でした！")
           var num = <?php echo $array[number_8];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -552,7 +552,7 @@ try {
         case 22:
           $("#result span").text("赤の30でした！")
           var num = <?php echo $array[number_30];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -568,7 +568,7 @@ try {
         case 23:
           $("#result span").text("黒の11でした！")
           var num = <?php echo $array[number_11];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -584,7 +584,7 @@ try {
         case 24:
           $("#result span").text("赤の36でした！")
           var num = <?php echo $array[number_36];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -600,7 +600,7 @@ try {
         case 25:
           $("#result span").text("黒の13でした！")
           var num = <?php echo $array[number_13];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -616,7 +616,7 @@ try {
         case 26:
           $("#result span").text("赤の27でした！")
           var num = <?php echo $array[number_27];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -632,7 +632,7 @@ try {
         case 27:
           $("#result span").text("黒の6でした！")
           var num = <?php echo $array[number_6];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -648,7 +648,7 @@ try {
         case 28:
           $("#result span").text("赤の34でした！")
           var num = <?php echo $array[number_34];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -664,7 +664,7 @@ try {
         case 29:
           $("#result span").text("黒の17でした！")
           var num = <?php echo $array[number_17];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -680,7 +680,7 @@ try {
         case 30:
           $("#result span").text("赤の25でした！")
           var num = <?php echo $array[number_25];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -695,7 +695,7 @@ try {
         case 31:
           $("#result span").text("黒の2でした！")
           var num = <?php echo $array[number_2];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -711,7 +711,7 @@ try {
         case 32:
           $("#result span").text("赤の21でした！")
           var num = <?php echo $array[number_21];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -727,7 +727,7 @@ try {
         case 33:
           $("#result span").text("黒の4でした！")
           var num = <?php echo $array[number_4];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_1st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
@@ -743,7 +743,7 @@ try {
         case 34:
           $("#result span").text("赤の19でした！")
           var num = <?php echo $array[number_19];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -759,7 +759,7 @@ try {
         case 35:
           $("#result span").text("黒の15でした！")
           var num = <?php echo $array[number_15];?> * 36;
-          var color = <?php echo $array[number_red];?> * 2;
+          var color = <?php echo $array[number_black];?> * 2;
           var st = <?php echo $array[number_2st12];?> * 3;
           var hiLow = <?php echo $array[number_1_18];?> * 2;
           var oddEven = <?php echo $array[number_odd];?> * 2;
@@ -775,7 +775,7 @@ try {
         case 36:
           $("#result span").text("赤の32でした！")
           var num = <?php echo $array[number_32];?> * 36;
-          var color = <?php echo $array[number_black];?> * 2;
+          var color = <?php echo $array[number_red];?> * 2;
           var st = <?php echo $array[number_3st12];?> * 3;
           var hiLow = <?php echo $array[number_19_36];?> * 2;
           var oddEven = <?php echo $array[number_even];?> * 2;
