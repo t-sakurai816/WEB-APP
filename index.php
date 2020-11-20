@@ -31,6 +31,7 @@
         <li><a href="./php/sample.php">CIT Pic (lesson1)</a></li>
         <li><a href="./php/top.php">top.php (lesson2)</a></li>
         <li><a href="./php/result.php">result.php (lesson2)</a></li>
+        <li><a href="./php/kadai2.php">kadai2.php(lesson8</a></li>
       </div>
 
     </div>
