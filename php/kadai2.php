@@ -31,6 +31,11 @@
 
    echo "<font color=red>取得したXMLデータをprint_r関数を用いて画面上に表示する．</font><br>\n";
    print_r($xml);
+   echo "<hr>\n";
+   echo "<p>デバッグ用</p>\n";
+   echo '<pre>';
+   var_dump($xml);
+   echo '</pre>';
    echo "<br><br>\n";
 
    echo "<font color=red>取得したXMLデータを表形式に整理して画面上に表示する．</font><br>\n";
