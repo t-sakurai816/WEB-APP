@@ -31,6 +31,7 @@
 
    echo "<font color=red>取得したXMLデータをprint_r関数を用いて画面上に表示する．</font><br>\n";
    print_r($xml);
+   echo "<br><br>\n";
 
    echo "<font color=red>取得したXMLデータを表形式に整理して画面上に表示する．</font><br>\n";
    $tmp = json_decode(json_encode($xml), true);
