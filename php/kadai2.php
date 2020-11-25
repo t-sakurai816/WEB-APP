@@ -39,14 +39,15 @@
    echo "<br><br>\n";
 
    echo "<font color=red>取得したXMLデータを表形式に整理して画面上に表示する．</font><br>\n";
+   $tmp = json_decode(json_encode($xml), true);
    //XMLデータから目的とするデータを抽出する
-   $state_kana = $xml; 
-   $city_kana = $xml; 
-   $address_kana = $xml; 
+   $state_kana = $tmp["ADDRESS_value"]["value"]["0"]["@attributes"]["state_kana"];//チバケン
+   $city_kana = $tmp["ADDRESS_value"]["value"]["1"]["@attributes"]["city_kana"];//ナラシノシ
+   $address_kana = $tmp["ADDRESS_value"]["value"]["2"]["@attributes"]["address_kana"];//ツダヌマ
    $company_kana = $xml; 
-   $state = $xml; 
-   $city = $xml;
-   $address = $xml;
+   $state = $tmp["ADDRESS_value"]["value"]["4"]["@attributes"]["state"];//千葉県
+   $city = $tmp["ADDRESS_value"]["value"]["5"]["@attributes"]["city"];//習志野市
+   $address = $tmp["ADDRESS_value"]["value"]["6"]["@attributes"]["address"];//津田沼
    $company = $xml;
 
    //抽出したデータを表形式に整理して表示する
