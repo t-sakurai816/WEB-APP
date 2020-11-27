@@ -1,0 +1,14 @@
+.card{
+  margin: 0.5rem 0;
+}
+
+.card-text{
+  height: 70px;/*文字幅を固定*/
+}
+
+.liquor-img{
+  width: 100%;
+  height: 214px;
+  object-fit: cover;
+  margin: 2% auto 0;
+}
