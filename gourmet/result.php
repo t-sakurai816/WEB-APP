@@ -3,7 +3,7 @@
 // APIkeyまで書く
 $base_url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/';
 
-$key = $_['SERVER_HG_API_KEY']; //ElasticBeanstalkの環境変数から読み取る
+$key = $_SERVER['HG_API_KEY']; //ElasticBeanstalkの環境変数から読み取る
 $lat = '35.6809591'; //フォームから受け取った値にする
 $lng = '139.7673068'; //フォームから受け取った値にする
 $range = '5';
