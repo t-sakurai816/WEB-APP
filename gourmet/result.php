@@ -103,8 +103,8 @@ $result = json_decode($response,true);
                         <i class="material-icons">keyboard_arrow_down</i>
                       </button>
                     </div>
-                    <ul id="shop-catch" class="collapse list-unstyled pl-3">
-                      <p class="shop-catch-'.$num.'">'.$result['results']['shop'][$num]['catch'].'</p>
+                    <ul id="shop-catch-'.$num.'" class="collapse list-unstyled pl-3">
+                      <p class="shop-catch">'.$result['results']['shop'][$num]['catch'].'</p>
                     </ul>
                   </li>
                 </ul>
