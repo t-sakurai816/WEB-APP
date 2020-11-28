@@ -15,21 +15,11 @@ $url = $base_url.'$key='.$key. '&lat='.$lat. '&lng='.$lng. '&range='.$range. '&t
 $response = file_get_contents(
   $base_url.'&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format
 );
-// http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=3b8f84d17843fb3e&lat=35.6809591&lng=139.7673068&range=5&type=special&count=5&format=json
+// http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=key&lat=35.6809591&lng=139.7673068&range=5&type=special&count=5&format=json
 
 // json結果をデコード
 $result = json_decode($response,true);
 // print_r($result['results']['shop']);
-
-// for ($i = 0; $i < $count; $i++){
-//   echo $result['results']['shop'][$i]['name']."\n"; //店名
-//   echo $result['results']['shop'][$i]['address']."\n"; //住所
-//   echo $result['results']['shop'][$i]['card']."\n"; //カード利用情報
-//   echo $result['results']['shop'][$i]['catch']."\n"; //キャッチコピー
-//   echo $result['results']['shop'][$i]['photo']['pc']['l']."\n"; //写真
-//   echo $result['results']['shop'][$i]['urls']['pc']."\n"."\n"."\n"; //店のURL
-
-// };
 
 // echo $result['results']['shop']['0']['name']; //店名
 // echo $result['results']['shop']['0']['address']; //住所
@@ -109,7 +99,7 @@ $result = json_decode($response,true);
                     </ul>
                   </li>
                 </ul>
-                <p class="shop-card">カード：利用可</p>
+                <p class="shop-card">カード：'.$result['results']['shop']['0']['card'].'</p>
                 <!--最大45文字-->
                 <a href="'.$result['results']['shop'][$num]['urls']['pc'].'" target="_blank"
                   rel="noopener noreferrer" class="btn btn-primary d-flex justify-content-center align-content-between">お店のホームページへ<i class="material-icons">open_in_new</i></a>
