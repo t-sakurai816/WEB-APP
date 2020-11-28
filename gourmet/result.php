@@ -78,18 +78,18 @@ for ($i = 0; $i < $count; $i++){
           // <!---スマホ1つ,タブレット2つ,PC3つ-->
           echo '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src=.'.$result['results']['shop'][$num]['photo']['pc']['l'].' alt='.$result['results']['shop'][$num]['name']. 'class="shop-img">
+              <img src='.$result['results']['shop'][$num]['photo']['pc']['l'].' alt='.$result['results']['shop'][$num]['name']. 'class="shop-img">
               <div class="card-body">
                 <h5 class="shop-name">'.$result['results']['shop'][$num]['name'].'</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item">
                     <div class="d-flex align-items-center">
                       <a href="#" class="nav-link">住所</a>
-                      <button class="btn btn-link btn-sm" data-target="#shop-address-'.[$num].'" data-toggle="collapse">
+                      <button class="btn btn-link btn-sm" data-target="#shop-address-'.$num.'" data-toggle="collapse">
                         <i class="material-icons">keyboard_arrow_down</i>
                       </button>
                     </div>
-                    <ul id="shop-address-'.[$num].'" class="collapse list-unstyled pl-3"><!--idはPHPで動的に変える-->
+                    <ul id="shop-address-'.$num.'" class="collapse list-unstyled pl-3"><!--idはPHPで動的に変える-->
                       <p class="shop-address">'.$result['results']['shop'][$num]['address'].'</p>
                     </ul>
                   </li>
@@ -99,12 +99,12 @@ for ($i = 0; $i < $count; $i++){
                   <li class="nav-item">
                     <div class="d-flex align-items-center">
                       <a href="#" class="nav-link">キャッチコピー</a>
-                      <button class="btn btn-link btn-sm" data-target="#shop-catch-'.[$num].'"  data-toggle="collapse"><!--idはPHPで動的に変える-->
+                      <button class="btn btn-link btn-sm" data-target="#shop-catch-'.$num.'"  data-toggle="collapse"><!--idはPHPで動的に変える-->
                         <i class="material-icons">keyboard_arrow_down</i>
                       </button>
                     </div>
                     <ul id="shop-catch" class="collapse list-unstyled pl-3">
-                      <p class="shop-catch-'.[$num].'">'.$result['results']['shop'][$num]['catch'].'</p>
+                      <p class="shop-catch-'.$num.'">'.$result['results']['shop'][$num]['catch'].'</p>
                     </ul>
                   </li>
                 </ul>
