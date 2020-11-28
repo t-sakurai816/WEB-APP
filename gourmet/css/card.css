@@ -32,7 +32,7 @@
 
 .shop-img{
   width: 95%;/*親のコンテンツ幅を基準*/
-  height: 40%;/*親のコンテンツ幅を基準*/
+  height: 214px;/*親のコンテンツ幅を基準*/
   object-fit: cover;
   margin: 2% auto 0;
 }

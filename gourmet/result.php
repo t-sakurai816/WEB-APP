@@ -110,7 +110,7 @@ $result = json_decode($response,true);
                 </ul>
                 <p class="shop-card">カード：利用可</p>
                 <!--最大45文字-->
-                <a href='.$result['results']['shop'][$num]['urls']['pc'].' target="_blank"
+                <a href="'.$result['results']['shop'][$num]['urls']['pc'].'" target="_blank"
                   rel="noopener noreferrer" class="btn btn-primary">お店のホームページへ</a>
               </div>
             </div>
