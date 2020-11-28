@@ -11,7 +11,7 @@ $type = 'special';
 $count = '7';
 $format= 'json';
 
-$url = $base_url.'$key='.$key. '&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format;
+$url = $base_url.'&key='.$key. '&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format;
 $response = file_get_contents(
   $base_url.'&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format
 );
