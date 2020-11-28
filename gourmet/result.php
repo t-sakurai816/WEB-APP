@@ -78,7 +78,7 @@ $result = json_decode($response,true);
           // <!---スマホ1つ,タブレット2つ,PC3つ-->
           echo '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <div class="card">
-              <img src='.$result['results']['shop'][$num]['photo']['pc']['l'].' alt='.$result['results']['shop'][$num]['name']. 'class="shop-img">
+              <img src="'.$result['results']['shop'][$num]['photo']['pc']['l'].' alt='.$result['results']['shop'][$num]['name']. '" class="shop-img">
               <div class="card-body">
                 <h5 class="shop-name">'.$result['results']['shop'][$num]['name'].'</h5>
                 <ul class="nav flex-column">
