@@ -20,15 +20,15 @@ $response = file_get_contents(
 $result = json_decode($response,true);
 // print_r($result['results']['shop']);
 
-for ($i = 0; $i < $count; $i++){
-  echo $result['results']['shop'][$i]['name']."\n"; //店名
-  echo $result['results']['shop'][$i]['address']."\n"; //住所
-  echo $result['results']['shop'][$i]['card']."\n"; //カード利用情報
-  echo $result['results']['shop'][$i]['catch']."\n"; //キャッチコピー
-  echo $result['results']['shop'][$i]['photo']['pc']['l']."\n"; //写真
-  echo $result['results']['shop'][$i]['urls']['pc']."\n"."\n"."\n"; //店のURL
+// for ($i = 0; $i < $count; $i++){
+//   echo $result['results']['shop'][$i]['name']."\n"; //店名
+//   echo $result['results']['shop'][$i]['address']."\n"; //住所
+//   echo $result['results']['shop'][$i]['card']."\n"; //カード利用情報
+//   echo $result['results']['shop'][$i]['catch']."\n"; //キャッチコピー
+//   echo $result['results']['shop'][$i]['photo']['pc']['l']."\n"; //写真
+//   echo $result['results']['shop'][$i]['urls']['pc']."\n"."\n"."\n"; //店のURL
 
-};
+// };
 
 // echo $result['results']['shop']['0']['name']; //店名
 // echo $result['results']['shop']['0']['address']; //住所
