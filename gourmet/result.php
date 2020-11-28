@@ -73,8 +73,7 @@ $result = json_decode($response,true);
                 <ul class="nav flex-column">
                   <li class="nav-item">
                     <div class="d-flex align-items-center">
-                      <a href="#" class="nav-link">住所</a>
-                      <button class="btn btn-link btn-sm" data-target="#shop-address-'.$num.'" data-toggle="collapse">
+                      <button class="btn btn-link btn-sm d-flex justify-content-center align-content-between" data-target="#shop-address-'.$num.'"  data-toggle="collapse">住所<!--idはPHPで動的に変える-->
                         <i class="material-icons">keyboard_arrow_down</i>
                       </button>
                     </div>
@@ -87,8 +86,7 @@ $result = json_decode($response,true);
                 <ul class="nav flex-column">
                   <li class="nav-item">
                     <div class="d-flex align-items-center">
-                      <a href="#" class="nav-link">キャッチコピー</a>
-                      <button class="btn btn-link btn-sm" data-target="#shop-catch-'.$num.'"  data-toggle="collapse"><!--idはPHPで動的に変える-->
+                      <button class="btn btn-link btn-sm d-flex justify-content-center align-content-between" data-target="#shop-catch-'.$num.'"  data-toggle="collapse">キャッチコピー<!--idはPHPで動的に変える-->
                         <i class="material-icons">keyboard_arrow_down</i>
                       </button>
                     </div>
