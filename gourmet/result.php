@@ -126,7 +126,7 @@ $result = json_decode($response,true);
 
 
   <footer>
-    <div class="github_logo"><a href="https://github.com/t-sakurai816/liquor-front" target="blank"><img
+    <div class="github_logo"><a href="https://github.com/t-sakurai816/WEB-APP/tree/main/gourmet" target="blank"><img
           alt="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
           height="40px">
       </a>
