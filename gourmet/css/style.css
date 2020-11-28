@@ -8,6 +8,13 @@ h1{
   font-size: 3rem;
 }
 
+.cp_hr02 {/*破線*/
+  margin:40px 0;/*上下*/
+	border-width: 1px 0 0 0;
+	border-style: dashed;
+	border-color: #BBBBBB;
+}
+
 .main{
   background-color: #ffecb3;
 }
