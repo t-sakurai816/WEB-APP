@@ -1,8 +1,9 @@
 <?php
 
 // APIkeyまで書く
-$base_url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=3b8f84d17843fb3e';
+$base_url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/';
 
+$key = $_['SERVER_HG_API_KEY']; //ElasticBeanstalkの環境変数から読み取る
 $lat = '35.6809591'; //フォームから受け取った値にする
 $lng = '139.7673068'; //フォームから受け取った値にする
 $range = '5';
@@ -10,7 +11,7 @@ $type = 'special';
 $count = '7';
 $format= 'json';
 
-$url = $base_url.'&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format;
+$url = $base_url.'$key='.$key. '&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format;
 $response = file_get_contents(
   $base_url.'&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format
 );
