@@ -31,7 +31,7 @@
   </div>
 
   <?php
-echo $_POST['firstName']; ?>
+echo 'Fetchで受け取った値：'.$_POST['firstName']; ?>
 </body>
 
 </html>
