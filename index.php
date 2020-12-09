@@ -27,11 +27,12 @@
         <h2>Other Pages</h2>
         <li><a href="./html/position.html">Get Position</a></li>
         <li><a href="https://webapp.massyu.net/game/index.html">ルーレットゲーム</a></li>
+        <li><a href="https://webapp.massyu.net/gourmet/index.html">近場グルメ</a></li>
         <hr class="cp_hr02" /><!--破線-->
         <li><a href="./php/sample.php">CIT Pic (lesson1)</a></li>
         <li><a href="./php/top.php">top.php (lesson2)</a></li>
         <li><a href="./php/result.php">result.php (lesson2)</a></li>
-        <li><a href="./php/kadai2.php">kadai2.php(lesson8</a></li>
+        <li><a href="./php/kadai2.php">kadai2.php(lesson8)</a></li>
       </div>
 
     </div>
