@@ -10,6 +10,7 @@
 
 <body>
   <div class="Container">
+    <button class="btn" id="start">start</button>
     <script>
       const start = document.getElementById('start');
       start.addEventListener('click', () => {
@@ -27,7 +28,6 @@
           .then(console.log);
       });
     </script>
-    <button class="btn" id="start">start</button>
   </div>
 
   <?php
