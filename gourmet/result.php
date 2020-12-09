@@ -117,12 +117,12 @@ $result = json_decode($response,true);
           alt="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
           height="40px">
       </a>
+    </div>
       <div class="credit">
         <div class="hotpapper">
           Powered by <a href="http://webservice.recruit.co.jp/">ホットペッパー Webサービス</a>
         </div>
       </div>
-    </div>
   </footer>
 </body>
 
