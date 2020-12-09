@@ -15,8 +15,8 @@
       const start = document.getElementById('start');
       start.addEventListener('click', () => {
         const postData = new FormData; // フォーム方式で送る場合
-        postData.set('firstName', 'hoge'); // set()で格納する
-        postData.set('lastName', 'fuga');
+        postData.set('firstNum', 30); // set()で格納する
+        postData.set('lastNum', 40);
 
         const data = {
           method: 'POST',
@@ -32,6 +32,10 @@
 
   <?php
 echo 'Fetchで受け取った値：'.$_POST['firstName']; ?>
+<!-- echoで表示はできないけど、console.logにはでているので、値としては扱えそう -->
+<?php
+echo $_POST['firstNum'] * $_POST['lastNum'];
+?>
 </body>
 
 </html>
