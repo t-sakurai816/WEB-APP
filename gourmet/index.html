@@ -8,8 +8,12 @@
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Material-icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- JavaScript -->
+  <script src="js/getPosition.js"></script>
 </head>
 
 <body>
@@ -20,21 +24,28 @@
   <div class="main">
     <div class="container">
       <p>現在地から指定した距離の半径にある飲食店を表示させます</p>
+      <button type="button" class="btn btn-primary d-flex justify-content-center align-content-between"
+        onclick="getPosition();">現在地からお店を探す<i class="material-icons">location_on</i></button>
       <form method="POST" action="result.php">
-        
+        <div class="position">
+          <div>緯度 : <span id="now_latitude">
+              <!--緯度を表示--></span></div>
+          <div>経度 : <span id="now_longitude">
+              <!--経度を表示--></span></div>
+        </div>
       </form>
     </div>
   </div>
 
   <footer>
-    <div class="github_logo"><a href="https://github.com/t-sakurai816/liquor-front" target="blank"><img
+    <div class="github_logo"><a href="https://github.com/t-sakurai816/WEB-APP/tree/main/gourmet" target="blank"><img
           alt="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
           height="40px">
       </a>
-      <div class="credit">
-        <div class="hotpapper">
-          Powered by <a href="http://webservice.recruit.co.jp/">ホットペッパー Webサービス</a>
-        </div>
+    </div>
+    <div class="credit">
+      <div class="hotpapper">
+        Powered by <a href="http://webservice.recruit.co.jp/">ホットペッパー Webサービス</a>
       </div>
     </div>
   </footer>
