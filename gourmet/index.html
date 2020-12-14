@@ -27,13 +27,10 @@
       <button type="button" class="btn btn-primary d-flex justify-content-center align-content-between"
         onclick="getPosition();">現在地からお店を探す<i class="material-icons">location_on</i></button>
       <form method="POST" action="result.php">
-        <div class="position">
-          <div>緯度 : <span id="now_latitude" name="now_latitude">
-              <!--緯度を表示--></span></div>
-          <div>経度 : <span id="now_longitude" name="now_longitude">
-              <!--経度を表示--></span></div>
-        </div>
-        <button class="btn btn-success" type="submit" value="ボタン">位置情報を送信する</button>
+        <input type="hidden" id="now_latitude" name="now_latitude"><!--緯度を表示-->
+        <input type="hidden" id="now_longitude" name="now_longitude"><!--経度を表示-->
+        <button type="submit" class="btn btn-success d-flex justify-content-center align-content-between"
+        onclick="getPosition();">現在地からお店を探す<i class="material-icons">location_on</i></button>
       </form>
     </div>
   </div>
