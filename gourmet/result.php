@@ -4,8 +4,8 @@
 $base_url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/';
 
 $key = $_SERVER['HG_API_KEY']; //ElasticBeanstalkの環境変数から読み取る
-$lat = '35.6809591'; //フォームから受け取った値にする
-$lng = '139.7673068'; //フォームから受け取った値にする
+$lat = $_POST['now_latitude']; //フォームから受け取った値にする
+$lng = $_POST['now_longitude']; //フォームから受け取った値にする
 $range = '5';
 $type = 'special';
 $count = '7';
