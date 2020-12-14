@@ -26,7 +26,7 @@
       <p>現在地から指定した距離の半径にある飲食店を表示させます</p>
       <button type="button" class="btn btn-primary d-flex justify-content-center align-content-between"
         onclick="getPosition();">現在地からお店を探す<i class="material-icons">location_on</i></button>
-      <form method="POST" action="result.php">
+      <form method="GET" action="result.php">
         <input type="hidden" id="now_latitude" name="now_latitude"><!--緯度を表示-->
         <input type="hidden" id="now_longitude" name="now_longitude"><!--経度を表示-->
         <button type="submit" class="btn btn-success d-flex justify-content-center align-content-between"
