@@ -58,7 +58,7 @@ $result = json_decode($response,true);
 
 <body>
   <header>
-    <h1>GOURMET</h1>
+    <h1>現在地グルメ</h1>
   </header>
   <div class="main">
     <div class="container">
