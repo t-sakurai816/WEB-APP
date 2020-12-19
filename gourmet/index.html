@@ -23,27 +23,32 @@
 
   <div class="main">
     <div class="container">
-      <p>現在地から指定した距離の半径にある飲食店を表示させます</p>
-      <button type="button" class="btn btn-primary d-flex justify-content-center align-content-between"
-        onclick="getPosition();">現在地からお店を探す<i class="material-icons">location_on</i></button>
-      <form method="POST" action="result.php">
-        <div class="form-group">
-          <label>緯度</label>
-          <input type="number" class="form-control" style="width: 25%;" id="now_latitude" name="now_latitude" step="0.000000000000000001" required>
-          <!--緯度を表示-->
-        </div>
-        <div class="form-group">
-          <label>経度</label>
-          <input type="number" class="form-control" style="width: 25%;" id="now_longitude" name="now_longitude" step="0.000000000000000001" required>
-          <!--経度を表示-->
-        </div>
+      <div class="location_on">
+        <button type="button" class="btn btn-primary d-flex justify-content-center align-content-between"
+          onclick="getPosition();">現在地からお店を探す<i class="material-icons">location_on</i></button>
+      </div>
+      <div class="form">
+        <form method="POST" action="result.php" class="row">
+          <div class="form-group col-xs-12 col-sm-12 col-md-4 ">
+            <label>緯度</label>
+            <input type="number" class="form-control" id="now_latitude" name="now_latitude" step="0.000000000000000001"
+              required>
+            <!--緯度を表示-->
+          </div>
+          <div class="form-group col-xs-12 col-sm-12 col-md-4">
+            <label>経度</label>
+            <input type="number" class="form-control" id="now_longitude" name="now_longitude"
+              step="0.000000000000000001" required>
+            <!--経度を表示-->
+          </div>
 
-        <div class="form-group">
-          <label>表示する店舗数</label>
-          <input class="form-control" style="width: 25%;" type="number" name="count" required>
-        </div>
-        <button type="submit" class="btn btn-success d-flex justify-content-center align-content-between">送信</button>
-      </form>
+          <div class="form-group col-xs-12 col-sm-12 col-md-4">
+            <label>表示する店舗数</label>
+            <input class="form-control" type="number" name="count" required>
+          </div>
+          <button type="submit" class="btn btn-success d-flex justify-content-center align-content-between">送信</button>
+        </form>
+      </div>
     </div>
   </div>
 

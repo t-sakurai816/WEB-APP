@@ -15,6 +15,22 @@ h1{
 	border-color: #BBBBBB;
 }
 
+.location_on{
+  padding-top: 2rem;
+}
+
+.location_on button{
+  margin: 0 auto;
+}
+
+.form{
+  padding: 2rem 0;
+}
+
+.form button {
+  margin: 2rem auto;
+}
+
 .main{
   background-color: #ffecb3;
 }
