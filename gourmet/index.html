@@ -32,19 +32,19 @@
         <form method="POST" action="result.php" class="row">
           <div class="form-group col-xs-12 col-sm-12 col-md-4 ">
             <label>緯度</label>
-            <input type="number" class="form-control" id="now_latitude" name="now_latitude" step="0.000000000000000001"
+            <input type="number" class="form-control" id="now_latitude" name="now_latitude" placeholder="上のボタンを押すと自動入力されます" step="0.000000000000000001"
               required>
             <!--緯度を表示-->
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-4">
             <label>経度</label>
-            <input type="number" class="form-control" id="now_longitude" name="now_longitude"
+            <input type="number" class="form-control" id="now_longitude" name="now_longitude" placeholder="上のボタンを押すと自動入力されます" 
               step="0.000000000000000001" required>
             <!--経度を表示-->
           </div>
 
           <div class="form-group col-xs-12 col-sm-12 col-md-4">
-            <label>表示する店舗数</label>
+            <label>表示する店舗数 <span>1~100の間で選択</span></label>
             <input class="form-control" type="number" name="count" value="10" min="1" max="100" required>
           </div>
           <button type="submit" class="btn btn-success d-flex justify-content-center align-content-between">送信</button>
