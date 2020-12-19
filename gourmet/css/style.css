@@ -15,6 +15,10 @@ h1{
 	border-color: #BBBBBB;
 }
 
+span{
+  color:#757575;
+}
+
 .location_on{
   padding-top: 2rem;
 }
