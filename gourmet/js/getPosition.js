@@ -14,11 +14,11 @@ const  getPosition = () => {
     (position) => { //無名関数
       //緯度
       const latitude = position.coords.latitude;
-      document.getElementById("now_latitude").textContent = latitude;
+      document.getElementById("now_latitude").value = latitude;
 
       // 経度
       const longitude = position.coords.longitude;
-      document.getElementById("now_longitude").textContent = longitude;
+      document.getElementById("now_longitude").value = longitude;
     },
     // 取得失敗した場合
     (error) => { //無名関数
