@@ -8,7 +8,7 @@ $lat = $_POST['now_latitude']; //フォームから受け取った値にする
 $lng = $_POST['now_longitude']; //フォームから受け取った値にする
 $range = '5';
 $type = 'special';
-$count = '7';
+$count = $_POST['count'];
 $format= 'json';
 
 $url = $base_url.'?key='.$key. '&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format;
