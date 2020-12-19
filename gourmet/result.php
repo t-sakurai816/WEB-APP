@@ -12,6 +12,7 @@ $count = '7';
 $format= 'json';
 
 $url = $base_url.'?key='.$key. '&lat='.$lat. '&lng='.$lng. '&range='.$range. '&type='.$type. '&count='.$count. '&format='.$format;
+echo $url; //デバッグ用
 $response = file_get_contents($url);
 // http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=key&lat=35.6809591&lng=139.7673068&range=5&type=special&count=5&format=json
 
